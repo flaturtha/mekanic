@@ -6,17 +6,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $pcolor;
+  // background-color: hotpink;
   color: $bgcolor;
   text-align: center;
   min-height: 75vh;
+  background-image: url('/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_42.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @media screen and (min-width: 48rem){
     justify-content: space-around;
     min-height: 65vh;
   }
   h1 {
-    // margin: 1rem 0 3rem;
+    margin: 1rem 0;
     font-size: 2.5rem;
+    color: $acolor;
+    @media screen and (min-width: 48rem){
+      margin-bottom: -5rem;
+      font-size: 5rem;
+    }
   }
   .prehead {
     font-style: italic;
@@ -33,6 +42,10 @@
     margin: 0.75rem;
     height: 60px;
     width: 200px;
+    border: 1px solid $acolor;
+    border-radius: 3px;
+    background-color: $acolor;
+    color: $pcolor;
   }
 }
 
