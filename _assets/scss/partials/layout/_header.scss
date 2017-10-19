@@ -1,0 +1,127 @@
+/*=============================================
+=            HEADER                           =
+=============================================*/
+
+.header {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  background-color: $acolor;
+  padding-bottom: 1rem;
+  // margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OLD CODE W/ ABSOLUTE POSITION ... DO NOT DELETE UNTIL FLEXBOX VERSION IS WORKING
+// .header {
+//   // overflow: hidden;
+//   background: $bgcolor url('/assets/img/site/pulpicons2.svg');
+//   border-bottom: 4px solid $acolor;
+//   margin-bottom: 1rem;
+//   position: relative;
+//   height: 78px;
+
+//   a.logo {
+//     z-index: 2;
+//     color: $bgcolor;
+//     position: absolute;
+//     display: block;
+//     width: 148px; /* width of graphic */
+//     height: 50px; /* height of graphic */
+//     background: url('/assets/img/site/logo-stacked.svg') no-repeat 0 0;
+//     background-size: contain;
+//     top: 15px;
+//     left: 20px;
+//     span {
+//       display: none;
+//     }
+//     @media screen and (min-width: 48rem) {
+//       margin-bottom: 20rem;
+//       // background: url('/assets/img/site/logo-horizontal.svg') no-repeat 75px 0;
+//       // width: 523px;
+//       // height: 60px;
+//       // background-size: contain;
+//     }
+//   }
+
+//   @media screen and (min-width: 48rem) {
+//     height: 131px;
+//   }
+//   @media screen and (min-width: 64rem) {
+//     height: 95px;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// header a, header label {
+//   display: block;
+//   padding: 1rem;
+//   color: $bgcolor;
+//   text-decoration: none;
+//   line-height: 0.5rem;
+//   text-transform: uppercase;
+// }
+
+// .logo {
+//   // background-image: url('/assets/img/site/atticus_w.svg');
+//   // background-repeat: no-repeat;
+//   // background-size: 60px 90px;
+//   span {
+//     color: $bgcolor;
+//     // display: none;
+//   }
+// }
+

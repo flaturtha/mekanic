@@ -1,0 +1,21 @@
+{% include head.html %}
+
+<body {% if page.title %} id="{{ page.title | downcase | replace: ' ', '-' }}" {% endif %} class="{{ page.category }}">
+	
+	{% include gtm.html %}
+
+	{% include fbjsdk.html %}
+
+  {% include header2.html %}
+
+  <main class="main wrap">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+
+  <!-- include quantcast.html %} -->
+
+</body>

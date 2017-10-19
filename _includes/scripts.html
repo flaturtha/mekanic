@@ -1,0 +1,187 @@
+
+<!-- <script src="/assets/js/vendor/modernizr.custom.34164.js"></script> -->
+
+<!--load jQuery, required-->
+<!-- <script src="/assets/vendor/js/jquery-3.1.1.slim.min.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+
+<!-- TYPEKIT -->
+<script src="//use.typekit.net/gwl0zuj.js"></script>
+<!-- <script>try{Typekit.load();}catch(e){}</script> -->
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- <script src="/assets/js/optin-bar.js"></script> -->
+
+
+<!-- OPTIN DROPDOWN - NO BUTTON TRIGGER -->
+<script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       e.style.display = 'none';
+    }
+</script>
+
+<!-- ISOTYPE -->
+<!-- <script src+"/assets/js/jquery.isotop.js"></script> -->
+
+
+<!-- HIDE DIV -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script> 
+	$(document).ready(function(){
+		$(".nobutton").click(function() {
+			$(".optin4").fadeOut("normal", function() {
+				$(this).remove();
+			});
+		});
+	});
+</script> 
+
+			
+
+<!-- <script>
+function myFunction() {
+  var x = document.getElementsByClassName("optin4");
+  var i;
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+}	
+</script> -->
+
+
+<script>
+  $(document).ready(function(){
+    $(".closeout").on("click", function(){
+      $(".optin-bar").fadeOut("slow", function(){
+        $(".nav").css({
+          "z-index": "2",
+          "position": "fixed",
+          "top": "0"
+        });
+        $(".siteintro_top").css("margin-top", "76px");
+      });
+    })
+  })
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+    $(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
+
+  })
+</script>
+
+
+
+<!-- Drip 
+  <script type="text/javascript">
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {}; 
+    _dcs.account = '1999627';
+    
+    (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true; 
+      dc.src = '//tag.getdrip.com/1999627.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+  </script> -->
+
+  <!-- GetSiteControl
+  <script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/70654/script.js');
+</script> -->
+
+
+
+
+<!-- sets story data (title, author, etc.) to localStorage/sessionStorage for use on download page -->
+<!-- <script>
+
+$(document).ready(function() {
+
+  $("#button__postdownload").click(function() {
+    console.log("button__postdownload clicked");
+    var url; // should be available throughout click function
+
+    init()
+    function init() {
+      if (!store.enabled) {
+        var url = "/downloads/your-free-download/"; //GENERIC DOWNLOAD PAGE
+        alert('Local storage is not supported by your browswer. Please disable "Private Mode", or upgrade your browser.')
+      return
+      } // end of if !store.enabled
+
+      var url = "/downloads/your-free-download/";
+      var metaArray = ["{{ page.title }}", "{{ page.author }}", "{{ page.genre }}", "{{ page.image }}", "{{ page.excerpt }}", "{{ page.kindle }}", "{{ page.epub }}", "{{ page.pdf }}"];
+
+      // ARRAY KEY
+      // [0] = title
+      // [1] = author
+      // [2] = genre
+      // [3] = image
+      // [4] = excerpt
+      // [5] = kindle url
+      // [6] = epub url
+      // [7] = pdf url
+
+      store.set('storyMeta', JSON.stringify(metaArray));
+
+      console.log(metaArray);
+    } // end of function init()
+
+    if (store.get('registered')) {
+      console.log("registered user!");
+      console.log(url);
+
+      var emailaddress = store.get('emailaddress');
+      console.log(emailaddress);
+      $('#mce-EMAIL').val(emailaddress);
+      // $(location).attr('href', url);  sends past modal to download page .. not currently working due to val = url issue!
+    } // end if
+
+  }); // end of click function
+});
+</script> -->
+
+<!-- Due to a screw up on my part when I mistyped "corpse" as "corse" in the URL of Start With A Corpse when redirecting from FB, I had to set up a redirect that would automatically take anyone who clicked the post in FB to the correct page. I had to hide the start-with-a-corse story from the short stories TOC. Hence this (probably BAD) code. -->
+<script>
+  $(document).ready(function(){
+    $(".redirect").remove();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+/*=============================================
+=    PRIVACY POLICY                           =
+=============================================*/
+
+.site-policies {
+	&__link {
+		text-decoration: underline;
+		a {
+			color: $acolor;
+		}
+	}
+	ul {
+		li {
+			list-style-type: circle;
+			margin: 0 0 0 2rem;
+			&:last-of-type {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<header class="header_home" role="banner">
+
+  <a class="biglogo" href="{{ site.url }}"><span class="hidden">Tales of Murder</span></a>
+
+  <input id="nav" type="checkbox">
+  <label for="nav">Menu</label>
+
+  <nav class="hidden">
+    <ul>
+      <li><a {% if page.url == '/' %} class="active" {% endif %} href="/">Home</a></li>
+      <li><a {% if page.url == '/about/' %} class="active" {% endif %} href="/about">About</a></li>
+      <li><a {% if page.url == '/murderwiki/' %} class="active" {% endif %} href="/murderwiki">MurderWiki</a></li>
+      <li><a {% if page.url == '/short-stories/' %} class="active" {% endif %} href="/short-stories">Short Stories</a></li>
+      <li><a {% if page.url == '/the-red-file/' %} class="active" {% endif %} href="/the-red-file">The Red File</a></li>
+      <li><a {% if page.url == '/bookstore/' %} class="active" {% endif %} href="/books">Bookstore</a></li>
+      <!-- <li id="searchbar"><a href="#">Search</a></li> -->
+    </ul>
+  </nav>
+
+</header>

@@ -1,0 +1,84 @@
+
+
+.smallnav {
+  border-top: 1px solid #5e6971;
+  border-bottom: 1px solid #5e6971;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 1rem 0 1rem;
+  @media screen and (min-width: 48rem){
+    flex-direction: row;
+    align-items: baseline;
+    // margin-top: 7rem;
+  }
+}
+
+
+
+
+.breadcrumbs {
+  // background-color: hotpink;
+  // color: lighten($pcolor, 15%);
+  // padding-top: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  @media screen and (min-width: 48rem){
+    margin-bottom: 0;
+  }
+}
+
+.breadcrumb {
+  border-bottom: 1px dotted $acolor;
+  display: inline;
+  li {
+    display: inline;
+    margin: 0 !important;
+    &:not(:last-child):after {
+      content: "\00bb";
+      color: $acolor;
+    }
+    a {
+      color: lighten($pcolor, 15%);
+    }
+  }
+  .active {
+    color: $acolor;
+    border-bottom: none;
+    font-weight: bolder;
+  }
+  @media screen and (min-width: 48rem){
+    border-bottom: none;
+  }
+}
+
+.showcart {
+  // border: 1px solid chartreuse;
+  display: flex;
+  margin-right: 1rem;
+  height: 15px;
+  margin-top: 0.5rem;
+}
+
+ // style="width: 75px;float: right;"
+
+.fa-shopping-cart {
+  color: $acolor;
+  margin: 0 0.4rem 0 0;
+}
+
+#sendowl-cart-widget {
+  color: $acolor;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-size: 0.875rem;
+}
+
+.cart-count {
+  font-weight: bold;
+  font-style: italic;
+}

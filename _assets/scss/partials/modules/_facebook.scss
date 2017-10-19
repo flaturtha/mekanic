@@ -1,0 +1,31 @@
+/*=============================================
+=    FACEBOOK RELATED STUFF                   =
+=============================================*/
+
+
+.social-buttons {
+	display: flex;
+	text-align: center;
+	margin: 0;
+	div {
+		padding-right: 1rem;
+	}
+}
+
+.social-buttons__bottom {
+	width: 400px;
+	max-width: 90%;
+	// border: 2px solid $acolor;
+	margin: 0 auto;
+	div {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+.sns__sample {
+	.social-buttons {
+		margin: 2rem 0;
+		justify-content: center;
+	}
+}

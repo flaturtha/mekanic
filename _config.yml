@@ -1,0 +1,83 @@
+# Site settings
+title: "RichTheWriterGuy"
+subtitle: 
+email: contact@richthewriterguy.com
+description: "A murder mystery, crime and detective fiction website."
+logo: 
+baseurl: ""
+url: "https://www.richthewriterguy.com"
+repository: "flaturtha/mekanic"
+
+locale: "en_US"
+
+twitter:
+  username: 
+
+social:
+  name: "Rich Cook"
+  email: rich@richthewriterguy.com
+  links:
+
+facebook:
+  app_id: 150675128843895
+  # 1035153329907183
+#   publisher:
+#   admins:
+
+# Read Time is a calculator to provide post Estimated Reading Time (ERT) based on word count. Usage is recommended.
+readtime: true
+wpm: 180
+
+collections:
+  downloads:
+    output: true
+    permalink: /:path/download/
+    title: Your Download
+  landingpages: 
+    output: true
+    permalink: /:path/
+    title: Landing Pages
+  thank-you:
+    output: true
+    permalink: /thank-you/:path/
+  email-archives:
+    output: true
+    permalink: /email-archives/:path/
+
+
+
+# paginate: 12
+# paginate_path: "/short-stories/page/:num"
+
+# Site Owner
+# owner:
+#   name: Rich Cook
+#   avatar:
+#   email: rich@richthewriterguy.com
+#   google:
+#     plus: richthewriterguypress
+#     analytics: UA-42672955-1
+#     verify:
+
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+highligher: rouge
+
+plugins:
+  - jekyll-sitemap
+  # - jekyll-seo-tag
+  # - jekyll-feed /* doesn't work for collections, only posts; which is STOOPID */
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  # syntax_highlighter: rouge
+
+include: ["_pages"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "gulpfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "bower.json"]
+# gems: [jekyll-assets, autoprefixer-rails]

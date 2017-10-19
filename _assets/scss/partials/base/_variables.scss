@@ -1,0 +1,36 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+@import 'fonts';
+
+
+/*==========  FONTS  ==========*/
+
+/* TYPE FACES */
+
+$header-font-family: 'Spectral', serif;
+$branding-font-family: /* "nimbus-sans-condensed",*/sans-serif; /* "ltc-broadway" */
+$base-font-family: 'Open Sans', sans-serif;
+
+
+
+/* FONT WEIGHTS */
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 800;
+$base-font-weight: $regular;
+$base-font-size: 1em !default;
+$base-line-height: 1.4;
+$header-font-weight: $bold;
+
+
+/*==========  COLORS  ==========*/
+
+$pcolor: #242424;
+$bgcolor: #ededed;
+$acolor: #C3CF21;
+$dcolor: #08212E;
+
+

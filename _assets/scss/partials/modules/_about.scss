@@ -1,0 +1,113 @@
+
+
+.header__about {
+  text-transform: uppercase;
+  text-align: center;
+  @include span(8);
+  margin-bottom: 3rem;
+  padding: 0.35rem;
+  border: 2px solid $bgcolor;
+  h1 {
+    &:before {
+      content: "\00ab\2009";
+    }
+    &:after {
+      content: "\2009\00bb";
+    }
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  @include susy-breakpoint($bp-med){
+    @include span(8 of 8);
+  }
+  @include susy-breakpoint($bp-large){
+    @include span(12 of 12);
+    border: none;
+  }
+}
+
+.edboard {
+  @include span(8);
+  border: 1px solid $bgcolor;
+  margin-bottom: 1rem;
+  @include susy-breakpoint($bp-med){
+    @include span(3 of 8);
+    @include push(5);
+  }
+  @include susy-breakpoint($bp-large){
+    @include span(4 of 12);
+    @include push(5);
+  }
+}
+
+.eboard__header {
+  background-color: $bgcolor;
+  color: $bgcolor;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.eboard__content {
+  font-size: 0.875rem;
+  // margin-bottom: 1rem;
+  padding: 0.5rem;
+  li span {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.about section {
+}
+
+.lfte {
+  margin-top: 2rem;
+  @include span(8);
+  // @include push(1);
+  &__header {
+    text-transform: uppercase;
+    border-bottom: 1px solid $bgcolor;
+    margin-bottom: 0.5rem;
+  }
+  &__content {
+    // @include span(6);
+    @include push(1);
+  }
+  ul {
+    list-style-type: circle;
+    li {
+      text-transform: initial;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+.policies, .terms, .manifesto {
+  margin-top: 2rem;
+  @include span(8);
+  // @include push(1);
+  &__header {
+    text-transform: uppercase;
+    border-bottom: 1px solid $bgcolor;
+    margin-bottom: 0.5rem;
+  }
+  &__content {
+    // @include span(6);
+    @include push(1);
+  }
+  ul {
+    list-style-type: circle;
+    li {
+      text-transform: initial;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+.about__intro {
+  font-size: 1.25rem;
+  
+}

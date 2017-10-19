@@ -1,0 +1,23 @@
+<nav class="nav" role="navigation">
+
+  <div class="main-nav">
+    <!-- <a class="logo" title="{{ site.title }}" href="{{ site.url }}"><p><span>{{ site.title }}</span></p></a> -->
+
+    <h2 class="hidden">Main Navigation</h2>
+    <input id="nav" type="checkbox">
+    <label for="nav">Menu</label>
+    <ul>
+      <li><a {% if page.category == 'home' %} class="active" {% endif %} href="/"><span>Home</span></a></li>
+      <li><a {% if page.category == 'start-here' %} class="active" {% endif %} href="/start-here"/><span class="bg-start-here">Start Here</span></a></li>
+      <li><a {% if page.category == 'murderwiki' %} class="active" {% endif %} href="/murderwiki/"><span>MurderWiki</span></a></li>
+      <li><a {% if page.category == 'short-stories' %} class="active" {% endif %} href="/short-stories/"><span>Short Stories</span></a></li>
+      <li><a {% if page.category == 'novellas' %} class="active" {% endif %} href="/novellas/"><span>Novellas</span></a></li>
+      <li><a {% if page.category == 'novels' %} class="active" {% endif %} href="/novels/"><span>Novels</span></a></li>
+      <!--<li><a {% if page.category == 'the-red-file' %} class="active" {% endif %} href="/subscriptions/"><span>Subscriptions</span></a></li>
+       <li id="searchbar"><a href="#">Search</a></li> -->
+    </ul>
+  </div> <!-- end .main-nav -->
+
+
+
+</nav> <!-- end nav.nav -->

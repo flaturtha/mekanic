@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Main SCSS file -- import of all partials
+   ========================================================================== */
+
+
+
+/*==========  VENDOR  ==========*/
+@import 'partials/base/normalize';
+
+
+
+/*==========  BASE  ==========*/
+@import 'partials/base/variables';
+@import 'partials/base/modular-scale';
+@import 'partials/base/base';
+@import 'partials/base/typography';
+@import 'partials/base/animations';
+// @import 'partials/base/lists';
+
+
+/*==========  MODULES  ==========*/
+@import 'partials/modules/privacy';
+
+
+
+/*==========  LAYOUT  ==========*/
+@import 'partials/layout/header';
+@import 'partials/layout/nav';
+@import 'partials/layout/home';
+@import 'partials/layout/footer';
+@import 'partials/layout/body';
+
+
+
+/*==========  UTILITIES  ==========*/
+@import 'partials/utils/utils';
+
+
+
+

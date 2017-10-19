@@ -1,0 +1,48 @@
+<script>
+	var dataLayer = window.dataLayer = window.dataLayer || [];
+	dataLayer.push({
+		'category': '{{ page.category }}',
+			{% if page.layout == 'sns' %}
+				'category': 'Saturday Night Special',
+			{% endif %}
+
+		'name': '{{ page.title }}',
+
+		{% if page.author %}
+			'author': '{{ page.author }}',
+		{% elsif page.series %}
+			'series': '{{ page.series }}',
+		{% endif %}
+
+		{% if page.category == 'short-stories' %}
+			'id': '{{ page.casefileNumber }}',
+			'pubDate': '{{ page.date }}',
+			'genre': '{{ page.genre }}',
+			'tags': '{{ page.tags }}',
+		{% endif %}
+
+		{% if page.layout == 'sns' %}
+			'currency': 'USD',
+			'price': {{ page.value }},
+		{% endif %}
+
+		{% if page.category == 'novellas' %}
+			'id': '{{ page.casefileNumber }}',
+			'pubDate': '{{ page.date }}',
+			'genre': '{{ page.genre }}',
+			'tags': '{{ page.tags }}',
+			'currency': 'USD',
+			'price': {{ page.price }}
+		{% endif %}
+
+		{% if page.category == 'novels' %}
+			'id': '{{ page.casefileNumber }}',
+			'pubDate': '{{ page.date }}',
+			'genre': '{{ page.genre }}',
+			'tags': '{{ page.tags }}',
+			'currency': 'USD',
+			'price': '{{ page.price }}'
+		{% endif %}
+
+	});
+</script>

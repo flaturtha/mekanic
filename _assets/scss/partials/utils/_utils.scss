@@ -1,0 +1,240 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.hidden {
+  display: none !important;
+}
+
+.hidden2 {
+  transition: all 2s;
+  display: none !important;
+}
+
+.hidden3 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.strikethru {
+  text-decoration: line-through;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.small {
+  font-size: 0.875rem !important;
+}
+
+.xsmall {
+  font-size: 0.75rem !important;
+}
+
+.xxsmall {
+  font-size: 0.625rem !important;
+}
+
+.xlarge {
+  font-size: 1.25rem !important;
+}
+
+.xxlarge {
+  font-size: 1.5rem !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.companyname {
+  text-transform: uppercase;
+  color: $acolor;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.cf {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.grit {
+   -webkit-mask-image: url("/assets/img/grit.png");
+   mask-image: url("/assets/img/mytexture6.png");
+   // -webkit-filter: contrast(50%);
+   // opacity: 0.5;
+   // filter: alpha(opacity=50);
+   // -webkit-mask-repeat: repeat-x;
+   // mask-repeat: repeat-x;
+   // -webkit-mask-clip: border;
+   // -webkit-mask-origin: border;
+}
+
+.grit2 {
+  -webkit-mask-image: url("/assets/img/grit2.png");
+  mask-image: url("/assets/img/grit2.png");
+  // opacity: 0.5;
+  // filter: alpha(opacity=50);
+}
+
+.grit3 {
+   -webkit-mask-image: url("/assets/img/mytexture6.png");
+   mask-image: url("/assets/img/mytexture6.png");
+   // -webkit-filter: contrast(50%);
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+   // -webkit-mask-repeat: repeat-x;
+   // mask-repeat: repeat-x;
+   // -webkit-mask-clip: border;
+   // -webkit-mask-origin: border;
+}
+
+
+.padding1r {
+  padding: 1rem;
+}
+
+.margin1r {
+  margin: 1rem;
+}
+
+.margin2r {
+  margin: 2rem;
+}
+
+.atticus {
+  font-weight: bold;
+  color: $acolor;
+}
+
+.bloodred {
+  color: $acolor;
+}
+
+.grey {
+  color: $pcolor;
+}
+
+.paper {
+  color: $bgcolor;
+}
+
+.guarantee {
+  font-weight: lighter;
+  color: lighten($pcolor, 5%);
+  font-size: 0.75rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.placeholder {
+  height: 375px;
+  border: 1px solid #242424;
+  background-image: url('/assets/img/site/atticus_b_small.png');
+  background-size: 50px 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.rubber_stamp {
+  // font-family: 'Vollkorn', serif;
+  font-size: 1.25rem;
+  // line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: $acolor;
+  background-color: $bgcolor;
+  border: 4px solid $acolor;
+  margin: 0 auto -2rem;
+  border-radius: 10px;
+  // opacity: 0.8;
+  transform: rotate(-3deg);
+  // position:absolute;
+  // left:8%;
+  // top:280px;
+  width: 300px;
+}
+.rubber_stamp::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 10px;
+  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+}
+
+.normalOL li {
+  text-transform: none;
+}
+
+.alert {
+  border: 2px solid $acolor;
+  background-color: yellow;
+  color: $acolor;
+  margin: 1rem auto 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 75%;
+}
+
+.lineabove {
+  border-top: 1px solid $acolor;
+  padding-top: 0.25rem;
+}
+
+.linebelow {
+  border-bottom: 1px solid $acolor;
+  padding-bottom: 0.25rem;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.note {
+  max-width: 90%;
+  font-style: italic;
+  font-size: 0.875rem !important;
+  margin: 0 auto 2rem;
+  padding: 0.25rem;
+  background-color: darken($bgcolor, 5%);
+}
+
+
+
+
+
+
+

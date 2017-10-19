@@ -1,0 +1,95 @@
+/* ==========================================================================
+   CONTACT US FORM
+   ========================================================================== */
+
+.contact {
+	border-top: 2px solid grey;
+	margin: 1rem auto;
+	padding: 1rem;
+	h2 {
+		@extend h1;
+		text-transform: uppercase;
+		text-align: center;
+		color: $acolor;
+	}
+	h3 {
+		// text-transform: capitalize;
+	}
+	p span {
+		color: red;
+		text-transform: uppercase;
+	}
+	// background-color: #ddd;
+	// border: 1px solid #666;
+	// border-radius: $border-radius;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	// box-shadow: 5 5 5px #000;
+}
+
+.contact__header {
+	width: 100%;
+}
+
+.contact__content {
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 800px;
+}
+
+.contact__copy {
+	
+	@media screen and (min-width: 400px) {
+		float: left;
+		width: 50%;
+		// text-align: right;
+	}
+}
+
+.contact__form {
+	background-color: $acolor;
+	color: $bgcolor;
+	// text-align: center;
+	padding: 0.5rem;
+	@media screen and (min-width: 400px) {
+		float: right;
+		width: 50%;
+		max-width: 320px;
+	}
+	input[type="email"], input[type="text"], textarea {
+		background-color: $bgcolor;
+		color: $pcolor;
+	}
+	input[type="submit"] {
+		background-color: #727217;
+		border-radius: 5px;
+		width: 100%;
+		margin: 1rem 0 0.5rem 0;
+	}
+	i {
+		color: $bgcolor;
+	}
+}
+
+.contact__address {
+	// border: 1px solid $acolor;
+	// border-radius: 10px;
+	// padding-right: 0.5rem;
+}
+
+.readmore__button__link {
+	color: $acolor;
+	text-align: center;
+	margin: 2rem auto 0 auto;
+}
+
+.thanks__contactform {
+	margin: 3rem auto;
+	width: 800px;
+	max-width: 90%;
+}
+
+
+
+
