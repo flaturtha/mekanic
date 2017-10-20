@@ -610,26 +610,41 @@ h4, .h4 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ededed;
+  color: #242424;
   text-align: center;
-  min-height: 75vh;
-  background-image: url("/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_42.png");
+  min-height: 90vh;
+  color: #ededed;
+  background-image: url("/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_25x6.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   @media screen and (min-width: 48rem) {
     .tease {
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-      min-height: 65vh; } }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .tease header {
+    width: 1024px;
+    max-width: 90%;
+    margin: 0 auto; }
+  .tease main {
+    width: 600px;
+    max-width: 90%;
+    margin: 2rem auto 1rem;
+    font-size: 1.25rem;
+    text-align: left; }
+  .tease ul {
+    text-align: left; }
+    .tease ul li {
+      margin-bottom: 0.75rem; }
   .tease h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
-    color: #C3CF21; }
+    color: #C3CF21;
+    text-shadow: 2px 2px #242424; }
     @media screen and (min-width: 48rem) {
       .tease h1 {
-        margin-bottom: -5rem;
         font-size: 5rem; } }
   .tease .prehead {
     font-style: italic;
@@ -637,15 +652,22 @@ h4, .h4 {
   .tease p {
     margin-bottom: 1rem; }
   .tease button {
-    padding: 0.5rem;
+    background-image: url("/assets/img/fakes/fccbe616f6921b78b90650f7cbd57d80.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.5rem 0.5rem 0.5rem 5rem;
     margin: 0.75rem;
-    height: 60px;
-    width: 200px;
+    height: 120px;
+    width: 400px;
+    font-size: 1.5rem;
+    font-weight: bold;
     border: 1px solid #C3CF21;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
     background-color: #C3CF21;
-    color: #242424; }
+    color: #242424;
+    -webkit-box-shadow: 5px 5px 5px #242424;
+            box-shadow: 5px 5px 5px #242424; }
 
 .proof {
   display: -webkit-box;
