@@ -652,9 +652,6 @@ h4, .h4 {
   .tease p {
     margin-bottom: 1rem; }
   .tease button {
-    background-image: url("/assets/img/fakes/fccbe616f6921b78b90650f7cbd57d80.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
     padding: 0.5rem 0.5rem 0.5rem 5rem;
     margin: 0.75rem;
     height: 120px;
@@ -765,8 +762,7 @@ h4, .h4 {
   font-size: 1.1rem;
   color: #ededed;
   background: #242424;
-  padding: 1rem;
-  margin-top: 2rem; }
+  padding: 1rem; }
 
 /* ==========================================================================
    BODY
@@ -790,6 +786,76 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: #242424; }
+
+/* ==========================================================================
+   LANDING PAGES
+   ========================================================================== */
+.lp .main {
+  background-color: #ededed; }
+
+.tw .your-lm {
+  background-color: #C3CF21;
+  color: #242424;
+  padding: 1rem;
+  margin: 0 0 2rem 0; }
+  .tw .your-lm p {
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.25rem; }
+
+.tw .main {
+  background-color: #ededed; }
+
+.tw h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem; }
+
+.tw .tw-offer {
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto; }
+  .tw .tw-offer h2 {
+    margin: 2rem 0 1rem;
+    color: #145173;
+    text-align: center;
+    text-decoration: underline; }
+  .tw .tw-offer p {
+    margin-bottom: 1rem; }
+  .tw .tw-offer figure {
+    float: right;
+    height: 200px;
+    width: 154px;
+    margin: -1rem 0 0 3rem; }
+    .tw .tw-offer figure figcaption {
+      text-align: center;
+      font-size: 0.75rem; }
+  .tw .tw-offer footer {
+    text-align: center; }
+    .tw .tw-offer footer p {
+      margin: -0.75rem 0 2rem; }
+    .tw .tw-offer footer span {
+      padding: 0.25rem 0.5rem;
+      background-color: #C3CF21;
+      color: #08212E; }
+    .tw .tw-offer footer a {
+      color: #08212E;
+      text-decoration: underline;
+      text-transform: uppercase; }
+
+.tw .ba-button {
+  width: 400px;
+  height: 100px;
+  max-width: 75%;
+  background-color: #08212E;
+  border: 1px solid #ededed;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  color: #ededed;
+  font-size: 1.5rem;
+  margin: 2rem; }
 
 /*==========  UTILITIES  ==========*/
 /* ==========================================================================

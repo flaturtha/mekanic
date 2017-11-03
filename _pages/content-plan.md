@@ -1,26 +1,31 @@
 ---
 layout: home
-permalink: /you-need-it-written-now/
+permalink: /content-plan/
 title: Home
 category: home
 ---
 
 <div class="tease">
 	<header>
-		<p class="prehead">The clock is ticking. Time is running out. Deadlines loom.</p>
-		<h1>YOU NEED IT WRITTEN. NOW.</h1>
+		<p class="prehead">“Those who fail to plan, plan to fail!” &mdash; Benjamin Franklin</p>
+		<h1>GOT A BLOG CONTENT&nbsp;PLAN?</h1>
+		<h3 style="width:800px;max-width:90%;margin:0 auto;">Or are you just throwing up whatever comes to mind &amp;&nbsp;hoping&nbsp;somebody will click,&nbsp;read,&nbsp;and&nbsp;share?</h3>
 	</header>
 
 	<main>
-		<!-- <p>You have a problem: blog posts need to be written, your industry trade publication is demanding that article, you’re losing sales because your email sequences are limp.</p> -->
-		<h3>Quit wasting time &amp; resources.<br>Hire a copy mechanic to get the job done right and right now.</h3>
-		<p class="italics" style="width:500px;max-width:90%;margin:1rem auto;">mechanic /məˈkanik/ (noun). A fixer. A trouble shooter. A specialist who is called in to solve a specialized problem.</p>
+		<ul class="hidden">
+			<li>Only 5.6% of blogs are updated regularly</li>
+			<li>Over 440 million blogs have been started then abandoned </li>
+			<li>Frequency and freshness are two of the top ranking factors accorded to Google</li>
+		</ul>
+		<br>
+		<p>A blog can be a powerful tool … to drive organic traffic to your site … to get social shares &amp; engagement … to establish your expertise!</p>
+		<p>But only if you keep it up-to-date with fresh, relevant content that your audience wants.</p>
 	</main>
 
 	<footer>
-		<button>I'M A BUSINESS OWNER<br><span class="italics xsmall">(and I need help!)</span></button>
-
-		<button>I'M AN AGENCY<br><span class="italics xsmall">(and my clients need help!)</span></button>
+		<button>GET MY <em class="underline">FREE</em> BLOG CONTENT PLAN ROADMAP!</button>
+		<!-- <img src="/assets/img/fakes/fccbe616f6921b78b90650f7cbd57d80.jpg" alt=""> -->
 	</footer>
 	
 </div>

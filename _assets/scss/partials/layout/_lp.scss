@@ -1,0 +1,98 @@
+/* ==========================================================================
+   LANDING PAGES
+   ========================================================================== */
+
+.lp {
+	.main {
+		background-color: $bgcolor;
+	}
+}
+
+.tw {
+	.your-lm {
+		background-color: $acolor;
+		color: $pcolor;
+		padding: 1rem;
+		margin: 0 0 2rem 0;
+		p {
+			// text-align: center;
+			width: 800px;
+			max-width: 90%;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: 1.25rem;
+		}
+	}
+	.main {
+		background-color: $bgcolor;
+	}
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.tw-offer {
+		width: 800px;
+		max-width: 90%;
+		margin: 0 auto;
+		h2 {
+			margin: 2rem 0 1rem;
+			color: #145173;
+			text-align: center;
+			text-decoration: underline;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+		figure {
+			float: right;
+			height: 200px;
+			width: 154px;
+			margin: -1rem 0 0 3rem;
+			figcaption {
+				text-align: center;
+				font-size: 0.75rem;
+			}
+		}
+		footer {
+			text-align: center;
+			p {
+				margin: -0.75rem 0 2rem;
+			}
+			span {
+				padding:0.25rem 0.5rem;
+				background-color:#C3CF21;
+				color:#08212E;
+			}
+			a {
+				color: $dcolor;
+				text-decoration: underline;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+
+	.ba-button {
+		width: 400px;
+		height: 100px;
+		max-width: 75%;
+		background-color: $dcolor;
+		border: 1px solid $bgcolor;
+		border-radius: 10px;
+		color: $bgcolor;
+		font-size: 1.5rem;
+		margin: 2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
