@@ -55,11 +55,15 @@ body {
   min-height: 100vh;
   flex-direction: column;
   position: relative;
-  font-size: 100%; /* 1rem; ... equivalent to 16px */
+  font-size: 112.5%; /* 1rem; ... equivalent to 16px */
   line-height: 1.25; /* equivalent to 20px */
   font-family: $base-font-family;
   color: $pcolor;
   background-color: $bgcolor;
+}
+
+p {
+  margin-bottom: 1rem !important;
 }
 
 a {
