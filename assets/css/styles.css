@@ -817,6 +817,9 @@ body {
   text-align: left !important;
   color: #ededed !important; }
 
+#no-more-blank-page > .title, #no-more-blank-page > .tagline {
+  padding-bottom: 1rem !important; }
+
 .tagline {
   font-size: 0.75rem;
   letter-spacing: initial; }
@@ -941,7 +944,8 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   border-bottom: 2px solid #C3CF21;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  margin-top: 1rem; }
   .tw .tw-offer header div {
     width: 800px;
     max-width: 90%;
