@@ -14,3 +14,33 @@ body {
   background-color: $pcolor;
   // padding: 1rem;
 }
+
+.logoR {
+	fill: hotpink;
+	height: 17px;
+	width: auto;
+	float: left;
+	margin: 0 0.15rem 0 0;
+}
+
+.xform {
+	transform:scaleX(-1) rotate(8deg);
+	filter:FlipH;
+}
+
+.title {
+	text-transform: uppercase !important;
+	font-family: $header-font-family !important;
+	font-size:0.85rem !important;
+	margin: 0 !important;
+	font-weight: 100 !important;
+	letter-spacing: 2px !important;
+	text-align: left !important;
+	color: $bgcolor !important;
+}
+
+.tagline {
+	@extend .title;
+	font-size: 0.75rem;
+	letter-spacing: initial;
+}

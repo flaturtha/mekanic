@@ -11,6 +11,8 @@ category: tw
 	<p>In the meantime, <strong>read below</strong> to find out how you can make sure your article is the best it can be!</p>
 </header>
 
+{% include branding_tw.html %}
+
 <div class="tw-offer">
 	<header>
 		<div>

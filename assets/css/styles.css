@@ -9,7 +9,12 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Spectral:300,400,700,800&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Spectral+SC");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:100,400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -380,7 +385,6 @@ textarea {
    ========================================================================== */
 /*==========  FONTS  ==========*/
 /* TYPE FACES */
-/* "ltc-broadway" */
 /* FONT WEIGHTS */
 /*==========  COLORS  ==========*/
 /* sets base font size to 18px */
@@ -406,7 +410,7 @@ html {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important; }
 
-body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, .lm-details h4, h4, h5, h6 {
   font-size-adjust: 0.5; }
 
 body {
@@ -440,8 +444,8 @@ figure {
 img {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Spectral", serif; }
+h1, h2, h3, .lm-details h4, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Josefin Slab", serif; }
 
 p {
   font-family: "Spectral", serif; }
@@ -487,20 +491,20 @@ h2, .h2 {
     /* 2.25x body copy size = 36px */
     line-height: 1.25; } }
 
-h3, .h3 {
+h3, .lm-details h4, .h3 {
   font-size: 1.375em;
   /* 1.375x body copy size = 22px */
   line-height: 1.13636364;
   /* 25px / 22px */ }
 
 @media (min-width: 43.75em) {
-  h3, .h3 {
+  h3, .lm-details h4, .h3 {
     font-size: 1.5em;
     /* 1.5x body copy size = 24px */
     line-height: 1.25; } }
 
 @media (min-width: 56.25em) {
-  h3, .h3 {
+  h3, .lm-details h4, .h3 {
     font-size: 1.75em;
     /* 1.75x body copy size = 28px */
     line-height: 1.25; } }
@@ -722,7 +726,6 @@ h4, .h4 {
     width: 33.3%;
     padding: 8px; }
   .offers .price {
-    list-style-type: none;
     border: 1px solid #eee;
     margin: 0;
     padding: 0;
@@ -790,11 +793,121 @@ body {
           flex: 1;
   background-color: #242424; }
 
+.logoR {
+  fill: hotpink;
+  height: 17px;
+  width: auto;
+  float: left;
+  margin: 0 0.15rem 0 0; }
+
+.xform {
+  -webkit-transform: scaleX(-1) rotate(8deg);
+      -ms-transform: scaleX(-1) rotate(8deg);
+          transform: scaleX(-1) rotate(8deg);
+  -webkit-filter: FlipH;
+          filter: FlipH; }
+
+.title, .tagline {
+  text-transform: uppercase !important;
+  font-family: "Josefin Slab", serif !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+  font-weight: 100 !important;
+  letter-spacing: 2px !important;
+  text-align: left !important;
+  color: #ededed !important; }
+
+.tagline {
+  font-size: 0.75rem;
+  letter-spacing: initial; }
+
 /* ==========================================================================
    LANDING PAGES
    ========================================================================== */
 .lp .main {
   background-color: #ededed; }
+
+.lp .primary header {
+  background-color: #145173;
+  color: #ededed;
+  margin: 0; }
+  .lp .primary header div {
+    width: 1024px;
+    max-width: 100%;
+    margin: 1rem auto 0;
+    padding: 2rem 1rem 1rem; }
+  .lp .primary header img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 0 3rem 0 0; }
+
+.lp .lead {
+  text-transform: uppercase;
+  color: #145173;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.lp .summary {
+  margin: -1rem 0 1rem 0;
+  padding-left: 1rem;
+  font-style: italic; }
+
+.what-youll-get, .lm-details, .lm-offer {
+  margin: 0 auto;
+  padding: 2rem 0 0;
+  border-bottom: 2px solid #145173;
+  background-image: url("/assets/img/fakes/newspaper.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .what-youll-get .inner, .lm-details .inner, .lm-offer .inner {
+    width: 1024px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: rgba(237, 237, 237, 0.3); }
+  .what-youll-get h2, .lm-details h2, .lm-offer h2 {
+    text-align: center; }
+
+.lm-list {
+  background-color: rgba(237, 237, 237, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+  text-align: center; }
+  .lm-list_item {
+    margin: 1rem; }
+
+.lm-details {
+  background: none; }
+  .lm-details h3, .lm-details h4 {
+    margin: 2.5rem auto 0;
+    text-align: center;
+    font-size: 1.5rem; }
+  .lm-details h4 {
+    font-size: 1.125rem;
+    margin: 0; }
+  .lm-details p {
+    width: 600px;
+    max-width: 80%;
+    margin: 1rem auto; }
+
+.lm-offer {
+  background: none; }
+
+.branding_tw {
+  margin: 0 0 -1rem 0;
+  padding: 1rem 1rem 1rem 2rem;
+  color: #ededed;
+  background-color: #242424; }
 
 .tw .your-lm {
   background-color: #C3CF21;
@@ -842,7 +955,7 @@ body {
   max-width: 90%;
   margin: 0 auto; }
 
-.tw .tw-offer h1, .tw .tw-offer h2, .tw .tw-offer h3, .tw .tw-offer h4, .tw .tw-offer h5, .tw .tw-offer h6 {
+.tw .tw-offer h1, .tw .tw-offer h2, .tw .tw-offer h3, .tw .tw-offer .lm-details h4, .lm-details .tw .tw-offer h4, .tw .tw-offer h4, .tw .tw-offer h5, .tw .tw-offer h6 {
   color: #145173; }
 
 .tw .tw-offer h2 {
@@ -851,7 +964,7 @@ body {
   text-align: center;
   text-decoration: underline; }
 
-.tw .tw-offer h3 {
+.tw .tw-offer h3, .tw .tw-offer .lm-details h4, .lm-details .tw .tw-offer h4 {
   margin-top: 2rem;
   text-transform: uppercase; }
 
@@ -884,7 +997,7 @@ body {
     text-decoration: underline;
     text-transform: uppercase; }
 
-.tw .ba-button {
+.ba-button {
   display: inline-block;
   width: 400px;
   height: 100px;
@@ -900,7 +1013,7 @@ body {
   margin: 2rem;
   padding: 2rem;
   text-decoration: none !important; }
-  .tw .ba-button:hover {
+  .ba-button:hover {
     background-color: #8021CF;
     border: 1px solid #f8f2fd;
     -webkit-border-radius: 10px;
@@ -940,6 +1053,80 @@ body {
   -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
           transform: rotate(10deg); }
+
+.tilt {
+  color: #E57E30;
+  font-size: 2.5rem;
+  position: relative;
+  top: 0.35rem;
+  padding-right: 0.25rem; }
+
+.indent1x {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 75%; }
+
+.example {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ededed;
+  margin: 3rem auto;
+  border: 2px solid #145173;
+  color: #ededed; }
+  .example .grey-bg {
+    background-color: #333333;
+    padding: 0.25rem 0.5rem 0.25rem 0;
+    letter-spacing: 1.5px;
+    line-height: 150%; }
+  .example img {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+    height: 350px;
+    width: auto;
+    margin: 1rem; }
+
+.emphasis {
+  color: red;
+  font-style: italic;
+  font-weight: bold; }
+
+.barstool {
+  font-style: italic;
+  padding-left: 2rem;
+  text-indent: -1.25rem; }
+
+.stripes {
+  background: -webkit-repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  background: -webkit-repeating-linear-gradient(145deg, #222, #222 10px, #333 10px, #333 20px);
+  background: repeating-linear-gradient(-55deg, #222, #222 10px, #333 10px, #333 20px); }
+
+#arrow {
+  text-align: center;
+  color: #E57E30;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+          animation: bounce 2s infinite ease-in-out; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px); } }
 
 /*==========  UTILITIES  ==========*/
 /* ==========================================================================
