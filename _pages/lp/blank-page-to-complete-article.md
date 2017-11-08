@@ -54,9 +54,9 @@ category: lp
 					<p>Because when you've got to get it written, you don't have time for complex processes.</p>
 					<p class="bold">You just need to get it written. NOW!</p>
 				</div>
-				
+				a
 				<div class="lm-list_item">
-					<button class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</button>
+					<a href="https://attorney-canisters-28803.netlify.com/tw/1st-draft/" class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</a>
 					<p class="small" style="margin-top:0.5rem;"><i class="fa fa-lock"></i>&nbsp;Your email address is safe and will only be used to communicate directly with you.</p>
 				</div>
 			</div>
@@ -109,7 +109,7 @@ category: lp
 
 	<div class="lm-offer" style="text-align:center;">
 
-		<button class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</button>
+		<a href="https://attorney-canisters-28803.netlify.com/tw/1st-draft/" class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</a>
 		<p class="small" style="margin-top:0.5rem;"><i class="fa fa-lock"></i>&nbsp;Your email address is safe and will only be used to communicate directly with you.</p>
 
 	</div>
