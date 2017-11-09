@@ -1,0 +1,52 @@
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window > div {
+  width: 1024px;
+  max-width: 90%;
+  height: 75vh;
+  position: relative;
+  margin: 10vh auto;
+  padding: 2rem;
+  border: 1px dashed $bcolor;
+  border-radius: 0.5rem;
+  background: $bcolor;
+  // drop-shadow: 10px 10px 5px #fff;
+  color: $bgcolor;
+}
+
+.modal-header {
+  font-weight: bold;
+  color: hotpink;
+}
+
+.modal-close {
+  color: lighten($bgcolor, 10%);
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}

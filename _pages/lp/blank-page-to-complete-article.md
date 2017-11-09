@@ -56,8 +56,23 @@ category: lp
 				</div>
 				a
 				<div class="lm-list_item">
-					<a href="https://attorney-canisters-28803.netlify.com/tw/1st-draft/" class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</a>
+					<a href="#open-modal" class="ba-button" style="margin:0 auto;text-align:center;">GET YOUR CHEATSHEET</a>
 					<p class="small" style="margin-top:0.5rem;"><i class="fa fa-lock"></i>&nbsp;Your email address is safe and will only be used to communicate directly with you.</p>
+
+					<div id="open-modal" class="modal-window">
+						<div>
+							<a href="#modal-close" title="Close" class="modal-close">Close</a>
+							<div>
+								<header class="modal-header">
+									<h1>GO FROM BLANK PAGE TO COMPLETED ARTICLE</h1>
+									<h3><span class="bold italics tilt">5</span> simple, actionable tips to get that article written. Now!</h3>
+								</header>
+								<div>{% include form-BP2CA.html %}</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 
