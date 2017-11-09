@@ -39,10 +39,6 @@ body {
 	color: $bgcolor !important;
 }
 
-#no-more-blank-page > .title {
-	padding-bottom: 1rem !important;
-}
-
 .tagline {
 	@extend .title;
 	font-size: 0.75rem;

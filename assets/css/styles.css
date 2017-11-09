@@ -817,9 +817,6 @@ body {
   text-align: left !important;
   color: #ededed !important; }
 
-#no-more-blank-page > .title, #no-more-blank-page > .tagline {
-  padding-bottom: 1rem !important; }
-
 .tagline {
   font-size: 0.75rem;
   letter-spacing: initial; }
