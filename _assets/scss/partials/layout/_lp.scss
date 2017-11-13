@@ -98,8 +98,11 @@
 
 
 .branding_tw {
+	border: 1px solid green;
+	display: flex;
 	margin: 0 0 -1rem 0;
-	padding: 1rem 1rem 1rem 2rem;
+	// align-self: center;
+	padding: 1rem;
 	color: $bgcolor;
 	background-color: $pcolor;
 }

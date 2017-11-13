@@ -3,10 +3,13 @@
 =============================================*/
 
 .header {
+	// border: 2px solid orange;
+  background-color: $pcolor;
   display: flex;
-  // flex-direction: column;
-  justify-content: space-around;
-  background-color: $acolor;
-  padding-bottom: 1rem;
-  // margin-bottom: 1rem;
+  flex-direction: column;
+  // padding-bottom: 1rem;
+  @media screen and (min-width: 40rem){
+  	flex-direction: row;
+  	justify-content: space-between;
+  }
 }

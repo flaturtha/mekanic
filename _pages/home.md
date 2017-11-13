@@ -12,13 +12,14 @@ category: home
 	</header>
 
 	<main>
-		<!-- <p>You have a problem: blog posts need to be written, your industry trade publication is demanding that article, you’re losing sales because your email sequences are limp.</p> -->
 		<h3>Quit wasting time &amp; resources.<br>Hire a copy mechanic to get the job done right and right now.</h3>
 		<p class="italics" style="width:500px;max-width:90%;margin:1rem auto;">mechanic /məˈkanik/ (noun). A fixer. A trouble shooter. A specialist who is called in to solve a specialized problem.</p>
 	</main>
 
 	<footer>
-		<button>I'M A BUSINESS OWNER<br><span class="italics xsmall">(and I need help!)</span></button>
+		<button>I'M A BUSINESS OWNER<br><span class="italics small">(Go from blank page to completed article)</span></button>
+
+		<button>I'M AN AGENCY<br><span class="italics small">(how to manage your client's content needs)</span></button>
 	</footer>
 	
 </div>
@@ -38,42 +39,60 @@ category: home
 
 	<h2>What do you need written today?</h2>
 
-	<div class="columns">
-	  <ul class="price">
-	    <li class="header">Article or Blog Post</li>
-	    <li class="grey">starting at $0.75 / word</li>
-	    <li>10GB Storage</li>
-	    <li>10 Emails</li>
-	    <li>10 Domains</li>
-	    <li>1GB Bandwidth</li>
-	    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-	  </ul>
+	<div class="pricing-table">
+		<div class="columns">
+		  <ul class="price">
+		    <li class="header">Article or Blog Post</li>
+		    <li class="grey">starting at $0.75 / word</li>
+		    <li>10GB Storage</li>
+		    <li>10 Emails</li>
+		    <li>10 Domains</li>
+		    <li>1GB Bandwidth</li>
+		    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		  </ul>
+		</div>
+
+		<div class="columns">
+		  <ul class="price">
+		    <li class="header" style="background-color:#C3CF21;color:#242424;">3&ndash;5 Articles Per Week</li>
+		    <li class="grey">starting at $2500 / month</li>
+		    <li>25GB Storage</li>
+		    <li>25 Emails</li>
+		    <li>25 Domains</li>
+		    <li>2GB Bandwidth</li>
+		    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		  </ul>
+		</div>
+
+		<div class="columns">
+		  <ul class="price">
+		    <li class="header">Email Sequences</li>
+		    <li class="grey">starting $350 / email</li>
+		    <li>50GB Storage</li>
+		    <li>50 Emails</li>
+		    <li>50 Domains</li>
+		    <li>5GB Bandwidth</li>
+		    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+		  </ul>
+		</div>
 	</div>
 
-	<div class="columns">
-	  <ul class="price">
-	    <li class="header" style="background-color:#C3CF21;color:#242424;">3&ndash;5 Articles Per Week</li>
-	    <li class="grey">starting at $2500 / month</li>
-	    <li>25GB Storage</li>
-	    <li>25 Emails</li>
-	    <li>25 Domains</li>
-	    <li>2GB Bandwidth</li>
-	    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-	  </ul>
-	</div>
+</div> <!-- end div.offers -->
 
-	<div class="columns">
-	  <ul class="price">
-	    <li class="header">Email Sequences</li>
-	    <li class="grey">starting $350 / email</li>
-	    <li>50GB Storage</li>
-	    <li>50 Emails</li>
-	    <li>50 Domains</li>
-	    <li>5GB Bandwidth</li>
-	    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-	  </ul>
-	</div>
-	
+<div class="cf"></div>
+
+<div class="pilot">
+	<h2>What is a copy mechanic &amp; why do you need one?!</h2>
+	<h3>The fact is, writing is hard and you do not have time or money to waste.</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque sapiente, eum eaque fugiat totam temporibus magni animi veritatis at autem voluptatum iure harum, deserunt, aperiam asperiores dolorem illum quis?</p>
+	<p>Beatae officiis laboriosam explicabo voluptatem! Ducimus, odit molestiae nesciunt quo, maiores quod ratione. Repellat maxime rerum aliquam, nihil voluptates voluptatem molestiae ducimus quas natus pariatur expedita in tempora repudiandae laborum!</p>
+	<p>Modi doloremque facilis labore quae optio fugiat molestiae, quia sit nulla, beatae neque eaque nam, inventore doloribus harum quaerat eum incidunt dolores sapiente! Minima consequuntur, quisquam commodi sapiente perspiciatis et &hellip; <span class="small underline">[continue reading]</span></p>
+
+	<button>CONTENT UPGRADE</button>
+</div>
+
+<div style="margin-top: 2rem;border-top:2px solid #C3CF21;">
+	{% include nav.html %}
 </div>
 
 

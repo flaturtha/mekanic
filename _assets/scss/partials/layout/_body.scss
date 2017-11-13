@@ -11,16 +11,8 @@ body {
 
 .main {
   flex: 1;
-  background-color: $pcolor;
+  background-color: $bgcolor;
   // padding: 1rem;
-}
-
-.logoR {
-	fill: hotpink;
-	height: 17px;
-	width: auto;
-	float: left;
-	margin: 0 0.15rem 0 0;
 }
 
 .xform {

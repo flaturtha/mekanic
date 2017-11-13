@@ -1,48 +1,29 @@
-<nav class="nav">
+<nav class="nav" role="navigation">
 
-  <!-- <div class="social-nav">
-    <h2 class="hidden">Social Media Options</h2>
+  <div class="social-nav hidden">
+    <h2 class="hidden">Social Media Submenu</h2>
     <ul>
-      <li<a href="#"><i class="fa fa-facebook-official"></i></a></li>
-      <li<a href="#"><i class="fa fa-twitter-square"></i></a></li>
-      <li<a href="#"><i class="fa fa-rss-square"></i></a></li>
+      <!-- <li class="submenu__search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
+      <li class="submenu__facebook"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      <li class="submenu__twitter"><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+      <li class="submenu__rss"><a href="http://feeds.feedburner.com/TalesOfMurder" rel="alternate" type="application/rss+xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+      <li class="submenu__slack"><a href=""><i class="fa fa-slack" aria-hidden="true"></i></a></li>
     </ul>
-  </div> -->
+  </div>
 
   <div class="main-nav">
+    <a class="logo" title="{{ site.title }}" href="{{ site.url }}"><p><span>{{ site.title }}</span></p></a>
+
     <h2 class="hidden">Main Navigation</h2>
     <input id="nav" type="checkbox">
     <label for="nav">Menu</label>
-    <div class="navbar">
-      <ul>
-        <li><a {% if page.category == 'home' %} class="active" {% endif %} href="/"><span>Home</span></a></li>
-        <li><a {% if page.category == 'masthead' %} class="active" {% endif %} href="/masthead"/><span>Masthead</span></a></li>
-        <li><a {% if page.category == 'murderwiki' %} class="active" {% endif %} href="/murderwiki/"><span>MurderWiki</span></a></li>
-        <li><a {% if page.category == 'short-stories' %} class="active" {% endif %} href="/short-stories/"><span>Short Stories</span></a></li>
-        <li><a {% if page.category == 'the-red-file' %} class="active" {% endif %} href="/the-red-file/"><span>The Red File</span></a></li>
-        <li><a {% if page.category == 'bookstore' %} class="active" {% endif %} href="/bookstore/"><span>Bookstore</span></a></li>
-        <!-- <li id="searchbar"><a href="#">Search</a></li> -->
-      </ul>
-    </div>
+    <ul>
+      <li><a {% if page.category == 'home' %} class="active" {% endif %} href="/"><span>home</span></a></li>
+      <li><a {% if page.category == 'about' %} class="active" {% endif %} href="/about"><span>about</span></a></li>
+      <li><a {% if page.category == 'editing' %} class="active" {% endif %} href="/editing/"><span>editing</span></a></li>
+      <li><a {% if page.category == 'writing' %} class="active" {% endif %} href="/writing/"><span>writing</span></a></li>
+      <li><a {% if page.category == 'agencies' %} class="active" {% endif %} href="/agencies/"><span>agencies</span></a></li>
+      <li><a {% if page.category == 'blog' %} class="active" {% endif %} href="/blog/"><span>blog</span></a></li>
+    </ul>
   </div> <!-- end .main-nav -->
 </nav> <!-- end nav.nav -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CODE BELOW FOR NIFTY DROP DOWN BIT BELOW MENU ITEMS FROM: http://tympanus.net/Development/CreativeLinkEffects/
-
-    <li><a {% if page.category == 'home' %} class="active" {% endif %} href="/"><span>Home</span><span class="menu__sub">contents</span></a></li>
-    <li><a {% if page.category == 'masthead' %} class="active" {% endif %} href="/masthead"><span>Masthead</span><span class="menu__sub">whodunit?</span></a></li>
-    <li><a {% if page.category == 'murderwiki' %} class="active" {% endif %} href="/murderwiki/"><span>MurderWiki</span><span class="menu__sub">resources</span></a></li>
-    <li><a {% if page.category == 'short-stories' %} class="active" {% endif %} href="/short-stories"><span>Short Stories</span><span class="menu__sub">read something</span></a></li>
-    <li><a {% if page.category == 'the-red-file' %} class="active" {% endif %} href="/the-red-file"><span>The Red File</span><span class="menu__sub">subscribe</span></a></li>
-    <li><a {% if page.category == 'bookstore' %} class="active" {% endif %} href="/bookstore"><span>Bookstore</span><span class="menu__sub">buy a book</span></a></li> -->
