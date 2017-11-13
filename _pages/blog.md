@@ -6,7 +6,20 @@ tagline: Blog &amp; Resources
 category: blog
 ---
 
-<section class="pages">
-	<h1><span>{{ page.title }}</span></h1>
+<header class="page-header">
+	<div class="wrap">
+		<h1>Blog &amp; Resources</h1>
+		<h2>Learn stuff about writing, etc.</h2>
+	</div>
+</header>
 
-</section>
+
+<main class="page-main">
+	<div class="wrap"></div>
+		
+</main>
+
+
+<footer class="page-footer">
+	
+</footer>
