@@ -19,9 +19,47 @@ category: editing
 	<div class="wrap">
 		<h2>Behind every great writer is an <em>editor</em>.</h2>
 		<p style="width:600px;max-width:75%;margin:0 auto;">The job of this editor is to take the words written and polish them, turning them into the diamonds that the writer intended them to be.</p>
-		<p class="bold uppercase acolor"><span style="background-color:#242424;padding:0.5rem;margin:0 auto;">Who is your editor?</span></p>
-		<hr>
-	</div>
+		<p class="bold uppercase acolor"><span style="background-color:#242424;padding:0.5rem;margin:0 auto;">What can an editor do for you?</span></p>
+	</div> <!-- end div.wrap -->
+
+	<section id="grammar">
+		<div class="wrap">
+			<h2>Grammar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam molestias necessitatibus repudiandae. Quis, molestias, expedita. Magni qui assumenda, sunt error voluptas dolore laborum dignissimos tenetur distinctio vero vitae esse culpa.</p>
+		</div>
+	</section>
+
+
+	<section id="spelling">
+		<div class="wrap">
+			<h2>Spelling</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sit nemo voluptatum magni deleniti modi fugit maiores sed molestias iusto perferendis vitae accusantium omnis sint, explicabo at repellendus beatae quo.</p>
+		</div>
+	</section>
+
+
+	<section id="usage">
+		<div class="wrap">
+			<h2>Usage</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel voluptatum dolores obcaecati unde eos, cum harum consequuntur perferendis laudantium numquam, nostrum minus debitis. Maiores odio obcaecati dolor aspernatur et!</p>
+		</div>
+	</section>
+
+
+	<section id="voice">
+		<div class="wrap">
+			<h2>Voice</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi itaque fugit, voluptate. Architecto autem labore quia aut asperiores quam molestias, blanditiis laboriosam corporis dolorem ducimus suscipit itaque fuga quos. Eum.</p>
+		</div>
+	</section>
+
+
+	<section id="style">
+		<div class="wrap">
+			<h2>Style</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente molestiae a dignissimos voluptatibus dolor deserunt unde nobis ducimus expedita quidem! Quae laboriosam magnam eum id ut fugiat suscipit soluta quia.</p>
+		</div>
+	</section>
 
 	<div class="offers">
 

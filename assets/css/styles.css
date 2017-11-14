@@ -691,20 +691,23 @@ h4, .h4 {
             -ms-flex-pack: center;
                 justify-content: center; } }
     .nav .main-nav a.logo {
-      display: inline-block;
-      margin: 1.5rem -2rem 1rem 1rem;
-      background: url("/assets/img/site/logo_full.svg") no-repeat;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+      background: url("/assets/img/site/logo_full3.svg") no-repeat;
       background-size: contain;
-      height: 20px;
-      width: 70%; }
+      width: 21%; }
       .nav .main-nav a.logo span {
         margin-left: -9999px; }
       .nav .main-nav a.logo:hover {
-        background: url("/assets/img/site/logo_full_chartreuse.svg") no-repeat; }
+        background: url("/assets/img/site/logo_full_chartreuse3.svg") no-repeat; }
       @media screen and (min-width: 48rem) {
         .nav .main-nav a.logo {
-          background: url("/assets/img/site/logo_full.svg") no-repeat;
-          height: 20px; } }
+          background: url("/assets/img/site/logo_full3.svg") no-repeat; } }
       @media screen and (min-width: 64rem) {
         .nav .main-nav a.logo {
           margin-right: 5rem; } }
@@ -735,7 +738,7 @@ h4, .h4 {
           visibility: visible; } }
     .nav .main-nav li {
       border-bottom: 1px solid #ededed;
-      display: block;
+      display: inline-block;
       font-size: 1.5rem;
       padding: 1.375rem 0; }
       .nav .main-nav li .active {
@@ -745,9 +748,18 @@ h4, .h4 {
           display: none; }
       @media screen and (min-width: 48rem) {
         .nav .main-nav li {
-          display: inline-block;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
           border: none;
-          font-size: 1rem; }
+          font-size: 0.85rem;
+          width: 75%; }
+          .nav .main-nav li:last-of-type {
+            padding-right: 2rem; }
           .nav .main-nav li .active {
             color: #C3CF21;
             border-top: 3px solid #C3CF21;
@@ -1434,6 +1446,31 @@ body {
 
 .page-footer {
   height: 200px; }
+
+#grammar {
+  border-top: 3px solid #242424;
+  margin: 1rem 0;
+  padding: 1rem; }
+
+#spelling {
+  border-top: 3px solid #242424;
+  margin: 1rem 0;
+  padding: 1rem; }
+
+#usage {
+  border-top: 3px solid #242424;
+  margin: 1rem 0;
+  padding: 1rem; }
+
+#voice {
+  border-top: 3px solid #242424;
+  margin: 1rem 0;
+  padding: 1rem; }
+
+#style {
+  border-top: 3px solid #242424;
+  margin: 1rem 0;
+  padding: 1rem; }
 
 /*==========  UTILITIES  ==========*/
 /* ==========================================================================

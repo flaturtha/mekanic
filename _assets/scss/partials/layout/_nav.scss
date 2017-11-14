@@ -20,21 +20,22 @@
     }
 
     a.logo {
-      display: inline-block;
-      margin: 1.5rem -2rem 1rem 1rem;
-      background: url('/assets/img/site/logo_full.svg') no-repeat;
+      display: flex;
+      align-self: flex-end;
+      // margin: 1.5rem -2rem 1rem 1rem;
+      background: url('/assets/img/site/logo_full3.svg') no-repeat;
       background-size: contain;
-      height: 20px;
-      width: 70%;
+      // height: 40px;
+      width: 21%;
       span {
         margin-left: -9999px;
       }
       &:hover {
-        background: url('/assets/img/site/logo_full_chartreuse.svg') no-repeat;
+        background: url('/assets/img/site/logo_full_chartreuse3.svg') no-repeat;
       }
       @media screen and (min-width: 48rem) {
-        background: url('/assets/img/site/logo_full.svg') no-repeat;
-        height: 20px;
+        background: url('/assets/img/site/logo_full3.svg') no-repeat;
+        // height: 30px;
       }
       @media screen and (min-width: 64rem) {
         margin-right: 5rem;
@@ -64,7 +65,7 @@
 
     li {
       border-bottom: 1px solid $bgcolor;
-      display: block;
+      display: inline-block;
       font-size: 1.5rem;
       padding: 1.375rem 0;
       .active {
@@ -75,9 +76,16 @@
           }
         }
       @media screen and (min-width: 48rem) {
-        display: inline-block;
+        display: flex;
+        align-self: center;
         border: none;
-        font-size: 1rem;
+        font-size: 0.85rem;
+        // font-weight: bold;
+        width: 75%;
+        // height: 10px;
+        &:last-of-type {
+          padding-right: 2rem;
+        }
         .active {
           color: $acolor;
           border-top: 3px solid $acolor;
