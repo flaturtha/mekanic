@@ -2,84 +2,77 @@
    HOMEPAGE
    ========================================================================== */
 
-.tease {
+.big-header {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: space-around;
   color: $pcolor;
   text-align: center;
-  min-height: 90vh;
+  // min-height: 100vh;
   background-color: $pcolor;
   color: $bgcolor;
   background-image: url('/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_25x6.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media screen and (min-width: 48rem){
-    justify-content: center;
-    // min-height: 65vh;
-  }
   header {
     width: 1024px;
     max-width: 90%;
-    margin: 0 auto;
-    // background-color: $pcolor;
-    // color: $bgcolor;
+    margin: 2rem auto 1rem;
+    h1 {
+      margin: 1rem 0;
+      font-size: 2.5rem;
+      color: $acolor;
+      text-shadow: 4px 4px $pcolor;
+      @media screen and (min-width: 48rem){
+        font-size: 5rem;
+      }
+    }
+    .prehead {
+      font-style: italic;
+      margin-top: 1rem;
+      @media screen and (min-width:48rem){
+        margin-top: 0;
+      }
+    }
+    .subhead {
+      width: 600px;
+      max-width: 85%;
+      margin: 0 auto;
+      padding: 0.25rem;
+      background-color: rgba(36, 36, 36, 0.35);
+      box-shadow: 0px 0px 3px 3px rgba(36, 36, 36, 0.35);
+      color: $bgcolor;
+      font-size: 1.25rem;
+    }
   }
   main {
-    width: 600px;
+    display: none;
+    width: 700px;
     max-width: 90%;
     margin: 2rem auto 1rem;
     font-size: 1.25rem;
-    text-align: left;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.3);
+    box-shadow: 0px 0px 60px 60px rgba(36, 36, 36, 0.3);
+      @media screen and (min-width:48rem){
+        display:inline-block;
+      }
   }
-  ul {
-    text-align: left;
-    li {
-      margin-bottom: 0.75rem;
+  .break {
+    display: block;
+    margin-top: 1rem;
+    @media screen and (min-width:48rem){
+      display: initial;
+      margin: 0;
     }
-  }
-  h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-    color: $acolor;
-    text-shadow: 2px 2px $pcolor;
-    @media screen and (min-width: 48rem){
-      // margin-bottom: -5rem;
-      font-size: 5rem;
-    }
-  }
-  .prehead {
-    font-style: italic;
-    letter-spacing: 2px;
-  }
-  footer {
-    // display: flex;
-    // img {
-    //   height: 100px;
-    //   width: 75px;
-
-    // }
-  }
-  p {
-    margin-bottom: 1rem;
-  }
-  // header, main, footer {
-  //   border: 1px solid hotpink;
-  // }
-  button {
-    margin: 0.75rem;
-    height: 120px;
-    width: 400px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 1px solid $acolor;
-    border-radius: 6px;
-    background-color: $acolor;
-    color: $pcolor;
-    box-shadow: 5px 5px 5px $pcolor;
   }
 }
+
+
+
+
 
 .proof {
   display: flex;
@@ -101,102 +94,16 @@
   }
 }
 
-.offers {
-  display: flex;
-  flex-direction: column;
-  background-color: $pcolor;
-  padding: 1rem;
-  h2 {
-    text-align: center;
-    margin: 2rem 0 1rem;
-    color: $bgcolor;
-  }
-
-  .columns {
-    float: left;
-    width: 33.3%;
-    padding: 8px;
-}
-
-/* Style the list */
-.price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-/* Add shadows on hover */
-.price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-    border: 1px solid $acolor;
-}
-
-/* Pricing header */
-.price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
-}
-
-/* List items */
-.price li {
-    // border-bottom: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
-    color: $bgcolor;
-}
-
-/* Grey list item */
-.price .grey {
-    background-color: #eee;
-    font-size: 20px;
-    color: $pcolor;
-}
-
-/* The "Sign Up" button */
-.button {
-    background-color: $acolor;
-    border: none;
-    color: $pcolor;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Change the width of the three columns to 100% 
-(to stack horizontally on small screens) */
-@media only screen and (max-width: 600px) {
-    .columns {
-        width: 100%;
-    }
-}
-}
 
 
 
 
-.pilot {
-  width: 1024px;
-  max-width: 90%;
-  margin: 3rem auto 0;
-  text-align: center;
-  h2, h3, p {
-    text-align: left;
-  }
-  button {
-    margin: 0.75rem auto;
-    height: 120px;
-    width: 400px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 1px solid $acolor;
-    border-radius: 6px;
-    background-color: $acolor;
-    color: $pcolor;
-    box-shadow: 5px 5px 5px $pcolor;
-  }
-}
+
+
+
+
+
+
+
+
+
