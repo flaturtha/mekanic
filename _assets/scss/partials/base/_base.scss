@@ -67,10 +67,11 @@ p {
 }
 
 a {
-  color: $acolor;
+  color: $bcolor;
+  font-weight: bold;
+  text-decoration: underline !important;
   &:hover {
-    // color: lighten($acolor, 10%);
-    text-decoration: underline;
+    color: lighten($bcolor, 20%);
   }
 }
 

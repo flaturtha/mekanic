@@ -1,0 +1,90 @@
+/*=============================================
+=            NAVIGATION.                      =
+=============================================*/
+
+.nav {
+  border-top: 2px solid $acolor;
+  border-bottom: 2px solid $acolor;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    // margin-bottom: 3rem;
+    background-color: $pcolor;
+    padding: 0.75rem 0;
+    li {
+      width: 100%;
+      @media screen and (min-width:48rem){
+        // padding-right: 50%;
+        border-right: 2px solid $acolor;
+        &:last-of-type {
+          border: none;
+        }
+      }
+      span {
+        display: block;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        color: $bgcolor;
+        border-bottom: 1px solid $bgcolor;
+        text-transform: lowercase;
+        font-size: 0.875rem;
+        font-style: italic;
+        @media screen and (min-width:48rem){
+          margin: 0;
+          padding: 0;
+          border-bottom: none;
+        }
+      }
+    }
+
+
+    // height: 200px;
+    // li {
+    //   font-weight: bold;
+    //   text-transform: uppercase;
+    //   font-size: 1.5rem;
+    //   border-top: 1px solid $acolor;
+    //   border-bottom: 1px solid $acolor;
+    //   border-radius: 0.5rem;
+    //   padding: 0.5rem;
+    //   margin-bottom: 2rem;
+    //   max-width: 90%;
+    //   background-color: rgba(20, 81, 115, 0.35);
+    //   box-shadow: 3px 3px 5px $pcolor;
+    //   @media screen and (min-width:48rem){
+    //     margin-top: 2rem;
+    //     font-size: 2.5rem;        
+    //   }
+    // }
+    @media screen and (min-width:48rem){
+      flex-direction: row;
+    }
+  }
+}
+
+
+.branding {
+  text-align: left;
+  padding-top: 0.75rem;
+  background-color: rgba(36, 36, 36, 0.25);
+  img {
+    height: 25px;
+    width: 100%;
+    @media screen and (min-width: 48rem){
+      width: auto;
+      padding-left: 1rem;
+    }
+  }
+}
+
+
+
+

@@ -6,20 +6,35 @@
 	.main {
 		background-color: $bgcolor;
 	}
-	header {
-		// border-top: 3px solid $bcolor;
-		border-bottom: 5px solid $acolor;
-		box-shadow: 2px 2px 5px $pcolor;
-		background-color: $acolor;
-		background-image: url('/assets/img/patterns/type.png');
-		color: $bgcolor;
-		margin: 0;
-		div {
-			width: 1024px;
-			max-width: 100%;
-			margin: 1rem auto 0;
-			padding: 2rem 1rem 1rem;
+	.primary {
+		header {
+			background-color: $bcolor;
+			color: $bgcolor;
+			margin: 0;
+			div {
+				width: 1024px;
+				max-width: 100%;
+				margin: 1rem auto 0;
+				padding: 2rem 1rem 1rem;			
+			}
+			img {
+				float: right;
+				width: 200px;
+				height: auto;
+				margin: 0 3rem 0 0;
+			}
 		}
+	}
+	.lead {
+		text-transform: uppercase;
+		color: $bcolor;
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+	.summary {
+		margin: -1rem 0 1rem 0;
+		padding-left: 1rem;
+		font-style: italic;
 	}
 }
 
@@ -27,43 +42,24 @@
 	margin: 0 auto;
 	padding: 2rem 0 0;
 	border-bottom: 2px solid $bcolor;
+	// background-color: lighten($acolor, 30%);
 	background-image: url('/assets/img/fakes/newspaper.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	// background-position: -50% -25%;
 	.inner {
 		width: 1024px;
 		max-width: 90%;
 		margin: 0 auto;
 		background-color: rgba(237, 237, 237, .3);
-		img {
-			max-width: 300px;
-			margin-bottom: 2rem;
-			@media screen and (min-width:48rem){
-				float: right;
-			}
-		}
-		h2 {
-
-		}
-		h3 {
-			margin-top: 5rem;
-			padding-top: 1rem;
-			text-align: center;
-			border-top: 2px dashed $pcolor;
-		}
+	}
+	h2 {
+		text-align: center;
 	}
 }
 
-.reverse {
-	background-color: $bcolor;
-	color: $bgcolor;
-	padding: 0.25rem 0.5rem;
-}
-
-
-
 .lm-list {
-	background-color: rgba(237, 237, 237, .5);
+	background-color: rgba(237, 237, 237, .3);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -94,18 +90,6 @@
 	}
 }
 
-.lead {
-	text-transform: uppercase;
-	color: $bcolor;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-.summary {
-	margin: -1rem 0 1rem 0;
-	padding-left: 1rem;
-	font-style: italic;
-}
-
 .lm-offer {
 	@extend .what-youll-get;
 	background: none;
@@ -124,37 +108,59 @@
 }
 
 .tw {
-	margin-top: -1rem;
-	header {
-		// border-top: 3px solid $bcolor;
-		border-bottom: 5px solid $bcolor;
-		box-shadow: 2px 2px 5px $pcolor;
-		background-color: lighten($bcolor, 30%);
-		background-image: url('/assets/img/patterns/type.png');
-		color: $bgcolor;
-		margin: 0;
-		div {
-			width: 1024px;
-			max-width: 100%;
-			margin: 1rem auto 0;
-			padding: 2rem 1rem 1rem;
-		}
-	}
-	.tw-offer {
-		background-image: url('/assets/img/lp/edited-page2.jpg');
-		// background-size: cover;
-		// background-repeat: repeat;
-		div {
+	.your-lm {
+		background-color: $acolor;
+		// animation: flash ease 1s;
+		// animation-iteration-count: 1;
+		// animation-delay: 1s;
+		border-bottom: 2px solid darken($acolor,15%);
+		color: $pcolor;
+		padding: 1rem;
+		p {
+			// text-align: center;
 			width: 800px;
 			max-width: 90%;
 			margin: 0 auto;
-			// background: rgba(255, 255, 255, 0.65);
-			padding: 1rem;					
-			p {
-				font-size: 1.25rem;
+			animation: flash ease 1s;
+			animation-iteration-count: 2;
+			animation-delay: 1s;
+			// font-weight: bold;
+			// font-size: 1.25rem;
+		}
+	}
+	.main {
+		background-color: #fff;
+	}
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2rem;
+		color: lighten($dcolor, 20%);
+	}
+
+	.tw-offer {
+		// background-color: hotpink;
+		header {
+  		background-image: url('/assets/img/lp/edited-page2.jpg');
+  		background-color: lighten($acolor,45%);
+  		background-repeat: no-repeat;
+		  background-size: cover;
+		  background-position: 50% 50%;
+		  border-bottom: 2px solid $acolor;
+			padding: 2rem 0;
+			margin-top: 1rem;
+			div {
+				width: 800px;
+				max-width: 90%;
+				margin: 0 auto;
+				// background: rgba(237, 237, 237, 0.65);
+				// padding: 0.125rem 0.25rem;					
+				p {
+					font-size: 1.25rem;
+					font-weight: bold;
+				}
 			}
 		}
-
 		.offer-body {
 			width: 800px;
 			max-width: 90%;
@@ -163,20 +169,6 @@
 		h1, h2, h3, h4, h5, h6 {
 			color: $bcolor;
 		}
-		h1 {
-		text-transform: uppercase;
-		text-align: center;
-		font-size: 3rem;
-		color: lighten($dcolor, 20%);
-		@media screen and (min-width:48rem){
-			font-size: 4.5rem;
-		}
-		span {
-			display: block;
-			font-size: 1.5rem;
-			margin-top: 0.5rem;
-			}
-		}
 		h2 {
 			margin: 2rem 0 1rem;
 			color: $bcolor;
@@ -184,7 +176,7 @@
 			text-decoration: underline;
 		}
 		h3 {
-			margin-top: 5rem;
+			margin-top: 2rem;
 			text-transform: uppercase;
 		}
 		p {
@@ -267,7 +259,6 @@
 	width: 175px;
 	height: auto;
 	transform: rotate(10deg);
-	margin: 0 0 0.5rem 1rem;
 }
 
 .tilt {

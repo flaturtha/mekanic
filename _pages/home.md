@@ -5,14 +5,16 @@ title: Home
 category: home
 ---
 
-{% include big-header.html %}
+{% include big-header2.html %}
 
-{% include proof.html %}
+{% include write-anything.html%}
 
-{% include bp2ca.html %}
+<!--  include proof.html %}
 
-{% include 1st-draft.html %}
+ include bp2ca.html %}
 
+ include 1st-draft.html %}
+ -->
 {% include footer.html %}
 
 
