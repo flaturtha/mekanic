@@ -762,6 +762,9 @@ h4, .h4 {
           -webkit-align-self: center;
               -ms-flex-item-align: center;
                   align-self: center;
+          -webkit-justify-content: space-around;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
           border: none;
           font-size: 1rem;
           width: 65%; }
@@ -854,9 +857,14 @@ h4, .h4 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #242424;
   text-align: center;
   border-bottom: 3px solid #C3CF21;
+  min-height: 100vh;
   background-color: #242424;
   color: #ededed;
   background-image: url("/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_25x6.png");
@@ -967,7 +975,32 @@ h4, .h4 {
           -webkit-animation-iteration-count: 1;
                   animation-iteration-count: 1; } }
 
-.write-anything {
+.write-anything header {
+  width: 800px;
+  max-width: 90%;
+  margin: 2rem auto 0;
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+  text-align: center; }
+  .write-anything header div {
+    text-align: left;
+    margin-bottom: 2rem; }
+    .write-anything header div p {
+      font-family: "Open Sans", sans-serif; }
+  .write-anything header h2 {
+    color: #C3CF21; }
+  .write-anything header h3, .write-anything header .lm-details h4, .lm-details .write-anything header h4 {
+    color: #145173;
+    margin-bottom: 1.5rem; }
+  .write-anything header h4 {
+    letter-spacing: 0.05rem;
+    margin: 0 0 1rem 0;
+    color: #ededed; }
+  .write-anything header p {
+    font-weight: 400;
+    font-size: 1rem; }
+
+.write-anything main {
   border-top: 4px solid #145173;
   border-bottom: 4px solid #145173;
   background-color: #ededed !important;
@@ -975,12 +1008,29 @@ h4, .h4 {
           box-shadow: 3px 10px 8px 5px rgba(36, 36, 36, 0.35);
   width: 800px;
   max-width: 100%;
-  margin: 2rem auto 0;
-  padding: 2rem 1rem; }
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  padding-top: -2rem; }
   @media screen and (min-width: 48rem) {
-    .write-anything {
+    .write-anything main {
       border: 4px solid #145173; } }
-  .write-anything h3, .write-anything .lm-details h4, .lm-details .write-anything h4 {
+  .write-anything main div {
+    background-color: #145173;
+    margin: 0 -1rem -4rem;
+    padding: 1rem;
+    border-bottom: 4px double #ededed;
+    text-align: center; }
+    .write-anything main div h2 {
+      color: #C3CF21; }
+    .write-anything main div h4 {
+      letter-spacing: 0.05rem;
+      margin: 0 0 1rem 0;
+      color: #ededed; }
+    .write-anything main div p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #ededed; }
+  .write-anything main h3, .write-anything main .lm-details h4, .lm-details .write-anything main h4 {
     border-top: 2px solid #242424;
     margin: 4rem -1rem 1rem -1rem;
     padding: 1rem;
@@ -989,50 +1039,72 @@ h4, .h4 {
     font-weight: bold;
     text-align: left;
     text-transform: lowercase; }
-    .write-anything h3:first-of-type, .write-anything .lm-details h4:first-of-type, .lm-details .write-anything h4:first-of-type {
+    .write-anything main h3:first-of-type, .write-anything main .lm-details h4:first-of-type, .lm-details .write-anything main h4:first-of-type {
       border: none; }
-  .write-anything p {
+  .write-anything main p {
     font-family: "Open Sans", sans-serif; }
-  .write-anything .positive {
+  .write-anything main .positive {
     text-align: right; }
-  .write-anything .number {
+  .write-anything main .number {
     font-size: 4rem; }
 
 .calendar-text {
   margin-top: 0.15rem; }
 
 .downloadWA {
-  margin: 0 auto;
-  padding: 0 2rem 1rem;
-  text-align: center;
-  background-color: #145173;
-  color: #ededed; }
+  margin: 0 auto !important;
+  padding: 0 2rem 1rem !important;
+  text-align: center !important;
+  border: none !important;
+  background-color: #145173 !important;
+  color: #ededed !important; }
   .downloadWA h3, .downloadWA .lm-details h4, .lm-details .downloadWA h4 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 3rem; }
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    padding-top: 3rem !important; }
     .downloadWA h3 span, .downloadWA .lm-details h4 span, .lm-details .downloadWA h4 span {
-      margin: 2rem 0 1rem;
-      font-size: 2rem;
-      color: #C3CF21; }
+      margin: 2rem 0 1rem !important;
+      font-size: 2rem !important;
+      color: #C3CF21 !important; }
       @media screen and (min-width: 48rem) {
         .downloadWA h3 span, .downloadWA .lm-details h4 span, .lm-details .downloadWA h4 span {
-          font-size: 2.75rem; } }
+          font-size: 2.75rem !important; } }
   .downloadWA p {
-    font-family: "Open Sans", sans-serif;
-    text-align: left;
-    font-style: italic;
-    letter-spacing: 0.05rem; }
+    font-family: "Open Sans", sans-serif !important;
+    text-align: left !important;
+    font-style: italic !important;
+    letter-spacing: 0.05rem !important; }
+  .downloadWA .ba-button {
+    font-size: 1rem;
+    padding-top: 2rem;
+    margin-top: 0; }
+    @media screen and (min-width: 48rem) {
+      .downloadWA .ba-button {
+        font-size: 1.5rem;
+        padding-top: 1.75rem; } }
 
 .editing-offer {
-  max-width: 75%;
-  margin: 2rem auto 0;
-  padding: 1rem 1rem 0 1rem;
-  background-color: #C3CF21;
-  text-align: center;
-  -webkit-box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35);
-          box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35); }
+  max-width: 75% !important;
+  margin: 2rem auto 0 !important;
+  padding: 1rem 1rem 0 1rem !important;
+  background-color: #C3CF21 !important;
+  text-align: center !important;
+  border: none !important;
+  -webkit-box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35) !important;
+          box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35) !important; }
+  .editing-offer p {
+    color: #242424 !important; }
+    .editing-offer p:first-of-type {
+      font-weight: bold; }
+  .editing-offer .ba-button {
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-top: 0; }
+    @media screen and (min-width: 48rem) {
+      .editing-offer .ba-button {
+        font-size: 1.5rem;
+        padding-top: 1.75rem; } }
 
 .first-line:first-line {
   font-weight: bold; }

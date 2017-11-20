@@ -6,11 +6,11 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  // justify-content: space-around;
+  justify-content: space-between;
   color: $pcolor;
   text-align: center;
   border-bottom: 3px solid $acolor;
-  // min-height: 100vh;
+  min-height: 100vh;
   background-color: $pcolor;
   color: $bgcolor;
   background-image: url('/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_25x6.png');
@@ -126,42 +126,103 @@
 
 
 .write-anything {
-  border-top: 4px solid $bcolor;
-  border-bottom: 4px solid $bcolor;
-  background-color: $bgcolor !important;
-  box-shadow: 3px 10px 8px 5px rgba(36, 36, 36, 0.35);
-  width: 800px;
-  max-width: 100%;
-  margin: 2rem auto 0;
-  padding: 2rem 1rem;
-  @media screen and (min-width:48rem){
-    border: 4px solid $bcolor;
-  }
-  h2 {
-
-  }
-  h3 {
-    border-top: 2px solid $pcolor;
-    margin: 4rem -1rem 1rem -1rem;
-    padding: 1rem;
-    background-color: $bcolor;
-    color: $bgcolor;
-    font-weight: bold;
-    text-align: left;
-    text-transform: lowercase;
-    &:first-of-type {
-      border: none;
-      // padding-top: 0;
+  header {
+    width: 800px;
+    max-width: 90%;
+    margin: 2rem auto 0;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    // background-color: rgba(36, 36, 36, 0.3);
+    // box-shadow: 0px 0px 60px 60px rgba(36, 36, 36, 0.3);
+    // div:last-of-type {
+    //   background-color: $bcolor;
+    //   margin-bottom: -2rem;
+    //   padding: 1rem;
+    //   p {
+    //     color: $bgcolor;
+    //   }
+    // }
+    div {
+      text-align: left;
+      margin-bottom: 2rem;
+      p {
+        font-family: $base-font-family;
+      }
+    }
+    h2 {
+      color: $acolor;
+    }
+    h3 {
+      color: $bcolor;
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      letter-spacing: 0.05rem;
+      margin: 0 0 1rem 0;
+      color: $bgcolor;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1rem;
     }
   }
-  p {
-    font-family: $base-font-family;
-  }
-  .positive {
-      text-align: right;
+  main {   
+    border-top: 4px solid $bcolor;
+    border-bottom: 4px solid $bcolor;
+    background-color: $bgcolor !important;
+    box-shadow: 3px 10px 8px 5px rgba(36, 36, 36, 0.35);
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+    padding-top: -2rem;
+    @media screen and (min-width:48rem){
+      border: 4px solid $bcolor;
     }
-  .number {
-    font-size: 4rem;
+    div {
+      background-color: $bcolor;
+      margin: 0 -1rem -4rem;
+      padding: 1rem;
+      border-bottom: 4px double $bgcolor;
+      text-align: center;
+      h2 {
+      color: $acolor;
+    }
+      h4 {
+            letter-spacing: 0.05rem;
+            margin: 0 0 1rem 0;
+            color: $bgcolor;
+          }
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        color: $bgcolor;
+      }
+    }
+    h3 {
+      border-top: 2px solid $pcolor;
+      margin: 4rem -1rem 1rem -1rem;
+      padding: 1rem;
+      background-color: $bcolor;
+      color: $bgcolor;
+      font-weight: bold;
+      text-align: left;
+      text-transform: lowercase;
+      &:first-of-type {
+        border: none;
+        // padding-top: 0;
+      }
+    }
+    p {
+      font-family: $base-font-family;
+    }
+    .positive {
+        text-align: right;
+      }
+    .number {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -170,41 +231,67 @@
 }
 
 .downloadWA {
-  margin: 0 auto;
-  padding: 0 2rem 1rem;
+  margin: 0 auto !important;
+  padding: 0 2rem 1rem !important;
   // border-top: 3px solid $pcolor;
-  text-align: center;
-  background-color: $bcolor;
-  color: $bgcolor;
+  text-align: center !important;
+  border: none !important;
+  background-color: $bcolor !important;
+  color: $bgcolor !important;
   h3 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 3rem;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    padding-top: 3rem !important;
     span {
-      margin: 2rem 0 1rem;
-      font-size: 2rem;
-      color: $acolor;
+      margin: 2rem 0 1rem !important;
+      font-size: 2rem !important;
+      color: $acolor !important;
       @media screen and (min-width: 48rem){
-        font-size: 2.75rem;
+        font-size: 2.75rem !important;
       }
     }
   }
   p {
-    font-family: $base-font-family;
-    text-align: left;
-    font-style: italic;
-    letter-spacing: 0.05rem;
+    font-family: $base-font-family !important;
+    text-align: left !important;
+    font-style: italic !important;
+    letter-spacing: 0.05rem !important;
+  }
+  .ba-button {
+    font-size: 1rem;
+    padding-top: 2rem;
+    margin-top: 0;
+    @media screen and (min-width:48rem){
+      font-size: 1.5rem;
+      padding-top: 1.75rem;
+    }
   }
 }
 
 .editing-offer {
-  max-width: 75%;
-  margin: 2rem auto 0;
-  padding: 1rem 1rem 0 1rem;
-  background-color: $acolor;
-  text-align: center;
-  box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35);
+  max-width: 75% !important;
+  margin: 2rem auto 0 !important;
+  padding: 1rem 1rem 0 1rem !important;
+  background-color: $acolor !important;
+  text-align: center !important;
+  border: none !important;
+  box-shadow: 3px 2px 3px 3px rgba(36, 36, 36, 0.35) !important;
+  p {
+    color: $pcolor !important;
+  &:first-of-type {
+    font-weight: bold;
+  }
+  }
+  .ba-button {
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-top: 0;
+    @media screen and (min-width:48rem){
+      font-size: 1.5rem;
+      padding-top: 1.75rem;
+    }
+  }
 }
 
 .first-line {
