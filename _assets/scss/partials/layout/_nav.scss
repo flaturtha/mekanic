@@ -7,7 +7,11 @@
   border-bottom: 1px solid $acolor;
   font-family: $header-font-family;
   width: 100%;
-  background: rgba($pcolor, 0.5);
+  background: $pcolor;
+  // overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 
   .main-nav {
     height: 50px;

@@ -1,7 +1,7 @@
 ---
 layout: home
-permalink: /
-title: Home
+permalink: /write-anything/
+title: Guide to Writing Anything
 category: home
 ---
 
@@ -9,11 +9,7 @@ category: home
 
 {% include big-header2.html %}
 
-{% include proof.html %}
-
-{% include offers_home.html %}
-
-{% include pilot.html %}
+{% include write-anything.html%}
 
 {% include footer.html %}
 

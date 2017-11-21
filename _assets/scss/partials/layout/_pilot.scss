@@ -1,0 +1,132 @@
+.pilot {
+  // width: 1024px;
+  // max-width: 90%;
+  margin-bottom: -4rem;
+  // text-align: center;
+  h2, h3, p {
+    text-align: left;
+  }
+  button {
+    margin: 0.75rem auto;
+    height: 120px;
+    width: 400px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid $acolor;
+    border-radius: 6px;
+    background-color: $acolor;
+    color: $pcolor;
+    box-shadow: 5px 5px 5px $pcolor;
+  }
+  .guide {
+    background-color: $bcolor;
+    margin: -1rem 0 2rem;
+    padding: 3rem 1rem 1rem;
+    div {
+      width: 1024px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .mini-head {
+      margin-top: 3rem;
+      padding: 0.5rem 0.5rem 0.25rem;
+      background-color: $acolor;
+      color: $bcolor;
+      span {
+        display: none;
+        font-family: serif;
+        font-size: 1.5rem;
+        @media screen and (min-width:48rem){
+          display: inline;
+        }
+      }
+    }
+    p {
+      font-family: $base-font-family;
+      color: $bgcolor;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    a.ba-button {
+      @extend .ba-button;
+      background-color: $acolor;
+      color: $bcolor !important;
+      font-size: 1.35rem !important;
+      margin-top: 1.5rem !important;
+      padding-top: 1.65rem !important;
+      @media screen and (min-width:48rem){
+        font-size: 1.75rem !important;
+        margin-top: 2rem !important;
+        padding-top: 2rem !important;
+      }
+    }
+    footer {
+      width: 600px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+      text-align: center;
+      color: $acolor;
+      width: 800px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  h3 {
+    color: $bcolor;
+    margin-bottom: 1.5rem;
+  }
+  h4 {
+    letter-spacing: 0.05rem;
+    margin: 0 0 1rem 0;
+    color: $bgcolor;
+    text-align: center;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .plan-list {
+    background-color: $bcolor;
+    color: $bgcolor;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pilot-story {
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto 1rem;
+    border-top: 3px solid $bcolor;
+    h3 {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      font-family: $base-font-family;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

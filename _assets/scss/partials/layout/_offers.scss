@@ -1,0 +1,98 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  background-color: $pcolor;
+  padding: 1rem;
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: $bgcolor;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    span {
+      display: block;
+    }
+    @media screen and (min-width:48rem){
+      font-size: 2.5rem;
+    }
+  }
+
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+
+
+
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid $bgcolor;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 10px 8px 12px 0 rgba($bgcolor,0.3);
+    border: 3px solid $acolor;
+  }
+
+  /* Pricing header */
+  .price .header {
+    background-color: $pcolor;
+    border-bottom: 15px solid $bgcolor;
+    color: $bgcolor;
+    font-size: 1.5rem;
+    text-align: center !important;
+    text-transform: uppercase;
+  }
+
+  /* List items */
+  .price li {
+    // border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: left;
+    color: $bgcolor;
+  }
+
+  .last-of-type {
+    text-align: center !important;
+    font-style: italic;
+    background-color: $bgcolor;
+    color: $pcolor !important;
+  }
+
+  /* Grey list item */
+  .price .grey {
+    // display: none;
+    background-color: $pcolor;
+    font-size: 20px;
+    color: $pcolor;
+    text-align: center;
+  }
+
+  /* The "Sign Up" button */
+  .button {
+    background-color: $acolor;
+    border: 1px solid $acolor;
+    border-radius: 4px;
+    color: $pcolor;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+/* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+}

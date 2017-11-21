@@ -673,7 +673,10 @@ h4, .h4 {
   border-bottom: 1px solid #C3CF21;
   font-family: "Josefin Slab", serif;
   width: 100%;
-  background: rgba(36, 36, 36, 0.5);
+  background: #242424;
+  position: fixed;
+  top: 0;
+  z-index: 2;
   /* main-nav */ }
   .nav .main-nav {
     height: 50px;
@@ -857,14 +860,14 @@ h4, .h4 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #242424;
   text-align: center;
   border-bottom: 3px solid #C3CF21;
-  min-height: 100vh;
+  min-height: 98vh;
   background-color: #242424;
   color: #ededed;
   background-image: url("/assets/img/fakes/3adc37868bcafc13df3f92e4a0b07c03_25x6.png");
@@ -906,8 +909,10 @@ h4, .h4 {
     width: 800px;
     max-width: 90%;
     margin: 2rem auto 1rem;
+    padding-top: 2rem;
     font-size: 1.25rem;
     text-align: center;
+    border-top: 2px solid #ededed;
     background-color: rgba(36, 36, 36, 0.3);
     -webkit-box-shadow: 0px 0px 60px 60px rgba(36, 36, 36, 0.3);
             box-shadow: 0px 0px 60px 60px rgba(36, 36, 36, 0.3); }
@@ -922,8 +927,6 @@ h4, .h4 {
   .big-header footer {
     width: 800px;
     max-width: 90%;
-    background-color: #ededed;
-    border-bottom: 3px solid #ededed;
     margin: 0 auto 1rem;
     padding: 1rem; }
     .big-header footer p {
@@ -941,39 +944,6 @@ h4, .h4 {
 .hp_arrow {
   margin-top: 2rem;
   color: #C3CF21 !important; }
-
-.proof {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5rem 0;
-  background-color: #ededed; }
-  .proof img {
-    width: 150px; }
-    @media screen and (min-width: 48rem) {
-      .proof img {
-        -webkit-filter: opacity(65%);
-                filter: opacity(65%); }
-        .proof img:hover {
-          -webkit-filter: opacity(100%);
-                  filter: opacity(100%);
-          -webkit-animation: swing 1s ease;
-                  animation: swing 1s ease;
-          -webkit-animation-iteration-count: 1;
-                  animation-iteration-count: 1; } }
 
 .write-anything header {
   width: 800px;
@@ -1075,12 +1045,12 @@ h4, .h4 {
     text-align: left !important;
     font-style: italic !important;
     letter-spacing: 0.05rem !important; }
-  .downloadWA .ba-button {
+  .downloadWA .ba-button, .downloadWA .pilot .guide a.ba-button, .pilot .guide .downloadWA a.ba-button {
     font-size: 1rem;
     padding-top: 2rem;
     margin-top: 0; }
     @media screen and (min-width: 48rem) {
-      .downloadWA .ba-button {
+      .downloadWA .ba-button, .downloadWA .pilot .guide a.ba-button, .pilot .guide .downloadWA a.ba-button {
         font-size: 1.5rem;
         padding-top: 1.75rem; } }
 
@@ -1097,12 +1067,12 @@ h4, .h4 {
     color: #242424 !important; }
     .editing-offer p:first-of-type {
       font-weight: bold; }
-  .editing-offer .ba-button {
+  .editing-offer .ba-button, .editing-offer .pilot .guide a.ba-button, .pilot .guide .editing-offer a.ba-button {
     font-size: 1rem;
     padding-top: 1rem;
     margin-top: 0; }
     @media screen and (min-width: 48rem) {
-      .editing-offer .ba-button {
+      .editing-offer .ba-button, .editing-offer .pilot .guide a.ba-button, .pilot .guide .editing-offer a.ba-button {
         font-size: 1.5rem;
         padding-top: 1.75rem; } }
 
@@ -1347,7 +1317,7 @@ body {
     text-decoration: underline;
     text-transform: uppercase; }
 
-.ba-button {
+.ba-button, .pilot .guide a.ba-button {
   display: inline-block;
   width: 400px;
   height: 100px;
@@ -1363,7 +1333,7 @@ body {
   margin: 2rem;
   padding: 2rem;
   text-decoration: none !important; }
-  .ba-button:hover {
+  .ba-button:hover, .pilot .guide a.ba-button:hover {
     background-color: #8021CF;
     border: 1px solid #f8f2fd;
     -webkit-border-radius: 10px;
@@ -1553,6 +1523,214 @@ body {
     max-width: 90%; }
     .page-footer li:last-of-type {
       margin-bottom: 3rem; }
+
+.proof {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0;
+  background-color: #ededed; }
+  .proof img {
+    width: 150px; }
+    @media screen and (min-width: 48rem) {
+      .proof img {
+        -webkit-filter: opacity(65%);
+                filter: opacity(65%); }
+        .proof img:hover {
+          -webkit-filter: opacity(100%);
+                  filter: opacity(100%);
+          -webkit-animation: swing 1s ease;
+                  animation: swing 1s ease;
+          -webkit-animation-iteration-count: 1;
+                  animation-iteration-count: 1; } }
+
+.offers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #242424;
+  padding: 1rem;
+  /* Style the list */
+  /* Add shadows on hover */
+  /* Pricing header */
+  /* List items */
+  /* Grey list item */
+  /* The "Sign Up" button */
+  /* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */ }
+  .offers h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #ededed;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+    .offers h2 span {
+      display: block; }
+    @media screen and (min-width: 48rem) {
+      .offers h2 {
+        font-size: 2.5rem; } }
+  .offers .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px; }
+  .offers .price {
+    list-style-type: none;
+    border: 1px solid #ededed;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .offers .price:hover {
+    -webkit-box-shadow: 10px 8px 12px 0 rgba(237, 237, 237, 0.3);
+            box-shadow: 10px 8px 12px 0 rgba(237, 237, 237, 0.3);
+    border: 3px solid #C3CF21; }
+  .offers .price .header {
+    background-color: #242424;
+    border-bottom: 15px solid #ededed;
+    color: #ededed;
+    font-size: 1.5rem;
+    text-align: center !important;
+    text-transform: uppercase; }
+  .offers .price li {
+    padding: 20px;
+    text-align: left;
+    color: #ededed; }
+  .offers .last-of-type {
+    text-align: center !important;
+    font-style: italic;
+    background-color: #ededed;
+    color: #242424 !important; }
+  .offers .price .grey {
+    background-color: #242424;
+    font-size: 20px;
+    color: #242424;
+    text-align: center; }
+  .offers .button {
+    background-color: #C3CF21;
+    border: 1px solid #C3CF21;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    color: #242424;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: uppercase; }
+  @media only screen and (max-width: 600px) {
+    .offers .columns {
+      width: 100%; } }
+
+.pilot {
+  margin-bottom: -4rem; }
+  .pilot h2, .pilot h3, .pilot .lm-details h4, .lm-details .pilot h4, .pilot p {
+    text-align: left; }
+  .pilot button {
+    margin: 0.75rem auto;
+    height: 120px;
+    width: 400px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #C3CF21;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    background-color: #C3CF21;
+    color: #242424;
+    -webkit-box-shadow: 5px 5px 5px #242424;
+            box-shadow: 5px 5px 5px #242424; }
+  .pilot .guide {
+    background-color: #145173;
+    margin: -1rem 0 2rem;
+    padding: 3rem 1rem 1rem; }
+    .pilot .guide div {
+      width: 1024px;
+      max-width: 90%;
+      margin: 0 auto; }
+    .pilot .guide .mini-head {
+      margin-top: 3rem;
+      padding: 0.5rem 0.5rem 0.25rem;
+      background-color: #C3CF21;
+      color: #145173; }
+      .pilot .guide .mini-head span {
+        display: none;
+        font-family: serif;
+        font-size: 1.5rem; }
+        @media screen and (min-width: 48rem) {
+          .pilot .guide .mini-head span {
+            display: inline; } }
+    .pilot .guide p {
+      font-family: "Open Sans", sans-serif;
+      color: #ededed;
+      text-align: center;
+      margin-top: 0.5rem; }
+    .pilot .guide a.ba-button {
+      background-color: #C3CF21;
+      color: #145173 !important;
+      font-size: 1.35rem !important;
+      margin-top: 1.5rem !important;
+      padding-top: 1.65rem !important; }
+      @media screen and (min-width: 48rem) {
+        .pilot .guide a.ba-button {
+          font-size: 1.75rem !important;
+          margin-top: 2rem !important;
+          padding-top: 2rem !important; } }
+    .pilot .guide footer {
+      width: 600px;
+      max-width: 100%;
+      margin: 0 auto; }
+  .pilot h2 {
+    text-align: center;
+    color: #C3CF21;
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto; }
+  .pilot h3, .pilot .lm-details h4, .lm-details .pilot h4 {
+    color: #145173;
+    margin-bottom: 1.5rem; }
+  .pilot h4 {
+    letter-spacing: 0.05rem;
+    margin: 0 0 1rem 0;
+    color: #ededed;
+    text-align: center; }
+  .pilot p {
+    font-weight: 400;
+    font-size: 1rem; }
+  .pilot .plan-list {
+    background-color: #145173;
+    color: #ededed;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    margin: 0 auto;
+    text-align: center; }
+  .pilot .pilot-story {
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto 1rem;
+    border-top: 3px solid #145173; }
+    .pilot .pilot-story h3, .pilot .pilot-story .lm-details h4, .lm-details .pilot .pilot-story h4 {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      text-align: center; }
+    .pilot .pilot-story p {
+      font-family: "Open Sans", sans-serif; }
 
 /*==========  UTILITIES  ==========*/
 /* ==========================================================================
