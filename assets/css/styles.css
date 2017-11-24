@@ -1079,6 +1079,55 @@ h4, .h4 {
 .first-line:first-line {
   font-weight: bold; }
 
+.three ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  list-style: none;
+  border-bottom: 2px solid #C3CF21;
+  border-top: 2px solid #C3CF21;
+  margin: 2rem 0; }
+  @media screen and (min-width: 48rem) {
+    .three ul {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      border: none; } }
+  .three ul li {
+    font-size: 3rem;
+    color: #C3CF21;
+    padding: 1rem; }
+    @media screen and (min-width: 48rem) {
+      .three ul li {
+        border-bottom: 2px solid #C3CF21;
+        border-top: 2px solid #C3CF21;
+        padding: 0; } }
+
+.cj-hp .cj_editing, .cj-hp .cj_writing, .cj-hp .cj_research {
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #242424; }
+  .cj-hp .cj_editing div p, .cj-hp .cj_writing div p, .cj-hp .cj_research div p {
+    text-align: center; }
+    .cj-hp .cj_editing div p span, .cj-hp .cj_writing div p span, .cj-hp .cj_research div p span {
+      color: #ededed;
+      background-color: #242424;
+      padding: 0.25rem;
+      width: 300px; }
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
@@ -1916,3 +1965,6 @@ a {
 .downTarrow {
   font-size: 6rem;
   font-weight: bold; }
+
+.badfont {
+  font-family: serif; }

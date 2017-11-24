@@ -11,10 +11,13 @@ category: home
 
 {% include proof.html %}
 
-{% include offers_home.html %}
+{% include customerjourneyHP.html %}
 
-{% include pilot.html %}
+<!--  include offers_home.html %}
 
+ include pilot.html %}
+ -->
+ 
 {% include footer.html %}
 
 

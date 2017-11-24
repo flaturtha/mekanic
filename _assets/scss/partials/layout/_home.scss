@@ -282,3 +282,73 @@
 
 
 
+.three {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    border-bottom: 2px solid $acolor;
+    border-top: 2px solid $acolor;
+    margin: 2rem 0;
+    // padding: 2rem;
+    @media screen and (min-width:48rem){
+      flex-direction: row;
+      border: none;
+    }
+    li {
+    font-size: 3rem;
+    color: $acolor;
+    padding: 1rem;
+    @media screen and (min-width:48rem){
+      border-bottom: 2px solid $acolor;
+      border-top: 2px solid $acolor;
+      padding: 0;
+      }
+    }
+  }
+}
+
+
+.cj-hp {
+  .cj_editing, .cj_writing, .cj_research {
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid $pcolor;
+    div p {
+      text-align: center;
+      span {
+        color: $bgcolor;
+        background-color: $pcolor;
+        padding: 0.25rem;
+        width: 300px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
