@@ -4,7 +4,9 @@
   flex-flow: row wrap;
   align-items: center;
   padding: 0.5rem 0;
-  background-color: $bgcolor;
+  background-color: $acolor;
+  background-image: url('/assets/img/patterns/type.png');
+  border-bottom: 4px solid $acolor;
   img {
     width: 150px;
     @media screen and (min-width: 48rem){

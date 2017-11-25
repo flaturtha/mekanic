@@ -283,6 +283,10 @@
 
 
 .three {
+  a {
+    text-decoration: none !important;
+    color: $acolor;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -311,44 +315,142 @@
 
 
 .cj-hp {
+  font-family: $base-font-family !important;
   .cj_editing, .cj_writing, .cj_research {
     width: 800px;
     max-width: 95%;
-    margin: 0 auto 2rem;
+    margin: 2rem auto 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid $pcolor;
-    div p {
+    // border-bottom: 2px solid $pcolor;
+    h2 {
+      color: $bcolor;
+      border-bottom: 2px solid $bcolor;
+      margin-bottom: 2rem;
+    }
+    hr {
+      border: 1px solid $bcolor;
+      margin: 1rem 0;
+    }
+    .callout {
+      color: $bcolor;
+      border-top: 2px solid $bcolor;
+      border-bottom: 2px solid $bcolor;
       text-align: center;
-      span {
-        color: $bgcolor;
-        background-color: $pcolor;
-        padding: 0.25rem;
-        width: 300px;
+      width: 600px;
+      max-width: 90%;
+      margin: 2rem auto 4rem;
+      padding: 0.5rem 0.5rem 0.05rem 0.5rem;
+    }
+    ul {
+      margin: 1rem auto 2rem auto;
+      list-style: none;
+      max-width: 600px;
+      li {
+        text-align: center;
+        padding: 0.5rem;
+        color: $bcolor;
+        text-transform: uppercase;
+        font-weight: bold;
       }
     }
+    a {
+      text-decoration: none !important;
+    }
+    .services {
+      margin-bottom: 3rem;
+      p.blue {
+        text-align: center;
+        margin: 2rem auto;
+        color: $bgcolor;
+        background-color: $bcolor;
+        padding: 0.5rem 1rem;
+        width: 300px;
+        text-transform: uppercase;
+        @media screen and (min-width:48rem){
+          padding: 0.5rem 2rem;
+          // width: 400px;
+        }
+      }
+    }
+  }
+  .magic-button {
+    border: 2px solid $bcolor;
+    border-radius: 8px;
+    padding: 1.25rem;
+    font-size: 1.85rem;
+    color: $bcolor;
+    text-align: center;
+    &:hover {
+      background-color: $bcolor;
+      color: $bgcolor;
+    }
+    @media screen and (min-width:48rem){
+      font-size: 4.25rem;
+    }
+  }
+  
+}
+
+.divider {
+  height: 75px;
+  width: 100%;
+  border-top: 4px solid $acolor;
+  border-bottom: 4px solid $acolor;
+  background-color: $acolor;
+  background-image: url('/assets/img/patterns/type.png');
+  &:first-of-type {
+    height: 1px;
+    background-color: $bgcolor;
+    border: none;
+    margin-bottom: 5rem;
   }
 }
 
 
 
 
+.bonzo-header {
+  line-height: 3rem;
+  @media screen and (min-width:48rem){
+    line-height: 5.25rem;
+  }
+}
 
 
 
+.rotate-words {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  
+  span {
+    // border: 1px solid hotpink;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    animation: rotateWords 12s linear infinite 0s;
+    color: $bgcolor;
+    @media screen and (min-width:48rem){
+      // text-decoration: underline;
+    }
+    // background-color: $acolor; 
+  }
+  
+  @for $i from 1 through 4 {
+    span:nth-child(#{$i}) {
+      animation-delay: ($i - 1) * 3s;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes rotateWords {
+    0% { opacity: 1; visibility: visible; animation-timing-function: ease-in; }
+    23% { opacity: 1; visibility: visible; }
+    25% { opacity: 0; visibility: hidden; }
+    100% { opacity: 0; visibility: hidden; }
+}

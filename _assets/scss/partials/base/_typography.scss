@@ -3,11 +3,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 p {
-  font-family: "Spectral", serif;
+  font-family: $base-font-family, serif;
 }
 
 .toc li {
-  font-family: "Spectral", serif;
+  font-family: $base-font-family, serif;
   font-weight: 700;
 }
 
